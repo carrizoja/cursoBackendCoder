@@ -6,9 +6,15 @@
     "id": 1
   },
   {
-    "title": "Micro intel i9 11th",
-    "price": 120000,
-    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592180/img/intel_i9_11th_rkievv.jpg",
+    "title": "Disco solido 1TB M2",
+    "price": 15000,
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592787/img/ssd_1tb_wd_xzsk8s.jpg",
     "id": 2
+  },
+  {
+    "title": "Motherboard Asus Z490 Wifi TUF",
+    "price": 30000,
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639593041/img/asus_tuf_wifi_gseius.png",
+    "id": 3
   }
 ]

@@ -3,9 +3,9 @@ const ProductManager = require('./productManager.js')
 const productService = new ProductManager();
 
 let product = {
-    title: "Micro intel i9 11th",
-    price: 120000,
-    thumbnail: "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592180/img/intel_i9_11th_rkievv.jpg"
+    title: "Motherboard Asus Z490 Wifi TUF",
+    price: 30000,
+    thumbnail: "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639593041/img/asus_tuf_wifi_gseius.png"
 
 }
 
