@@ -20,11 +20,18 @@ class ProductManager {
             if (fs.existsSync(pathToProducts)) {
                 let data = await fs.promises.readFile(pathToProducts, 'utf-8')
                 let products = JSON.parse(data);
-                let id = products[products.length - 1].id + 1
-                product.id = id;
-                products.push(product);
-                await fs.promises.writeFile(pathToProducts, JSON.stringify(products, null, 2))
-                return { status: "success", message: `product created - product id is ${product.id}` }
+                if (products.length === 0) {
+                    product.id = 1
+                    await fs.promises.writeFile(pathToProducts, JSON.stringify([product], null, 2))
+                    return { status: "success", message: `product created - product id is ${product.id}` }
+                } else {
+                    let id = products[products.length - 1].id + 1
+                    product.id = id;
+                    products.push(product);
+                    await fs.promises.writeFile(pathToProducts, JSON.stringify(products, null, 2))
+                    return { status: "success", message: `product created - product id is ${product.id}` }
+                }
+
             } else { // El archivo no existe
                 product.id = 1
                 await fs.promises.writeFile(pathToProducts, JSON.stringify([product], null, 2))
