@@ -1,0 +1,27 @@
+[{
+        "title": "Micro intel i9 11th",
+        "price": 120000,
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592180/img/intel_i9_11th_rkievv.jpg",
+        "id": 1
+    },
+    {
+        "title": "Disco solido 1TB M2",
+        "price": 15000,
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592787/img/ssd_1tb_wd_xzsk8s.jpg",
+        "id": 2
+    },
+    {
+        "title": "Memoria Corsair 32GB ",
+        "price": 25000,
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592787/img/ssd_1tb_wd_xzsk8s.jpg",
+        "id": 3
+    },
+    {
+        "title": "Gabinete Sentey Z20",
+        "price": 30000,
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592787/img/ssd_1tb_wd_xzsk8s.jpg",
+        "id": 4
+    }
+
+
+]
