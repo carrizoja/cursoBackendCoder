@@ -1,0 +1,8 @@
+[
+  {
+    "name": "hulk",
+    "specie": "superheroe",
+    "thumbnail": "http://localhost:8080/img/1644253383831-hulk.png",
+    "id": 1
+  }
+]
