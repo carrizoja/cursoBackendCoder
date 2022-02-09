@@ -50,6 +50,40 @@ class ProductsManager {
         }
 
     }
+
+    findById = async(id) => {
+        let data = await fs.promises.readFile(pathToProducts, 'utf-8')
+        let products = JSON.parse(data);
+
+        let product = products.find(p => p.id === id)
+        if (product) return { status: "sucess", payload: product }
+        else return { status: "error", message: "product not found" }
+    }
+
+    updateProduct = async(id, updatedProduct) => {
+        if (!id) return { status: "error", error: "ID needed" }
+        const data = await this.get();
+        const index = data.payload.findIndex(e => e.id === id)
+        data.payload[index] = {...data.payload[index], ...updatedProduct }
+
+        await fs.promises.writeFile(pathToProducts, JSON.stringify(data.payload, null, 2))
+        return { status: "success", message: "Product updated" }
+
+    }
+
+    deleteProduct = async(id) => {
+        if (!id) return { status: "error", error: "ID needed" }
+        if (fs.existsSync(pathToProducts)) {
+            let data = await fs.promises.readFile(pathToProducts, 'utf-8')
+            let products = JSON.parse(data);
+            let newProducts = products.filter(product => product.id !== id)
+            await fs.promises.writeFile(pathToProducts, JSON.stringify(newProducts, null, 2))
+            return { status: "success", message: "Product deleted" }
+        }
+
+
+    }
+
 }
 
 module.exports = ProductsManager;

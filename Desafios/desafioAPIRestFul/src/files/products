@@ -1,20 +1,19 @@
-[
-  {
-    "name": "micro intel i9 11th",
-    "price": "120000",
-    "thumbnail": "http://localhost:8080/img/1644261708592-intel_i9_11th.jpg",
-    "id": 1
-  },
-  {
-    "name": "ssd m2 1TB WD",
-    "price": "16000",
-    "thumbnail": "http://localhost:8080/img/1644261764851-ssd_1tb_wd.jpg",
-    "id": 2
-  },
-  {
-    "name": "memoria crucial vengeance 32GB RGB",
-    "price": "25000",
-    "thumbnail": "http://localhost:8080/img/1644261808098-crucial_vegeance.jpg",
-    "id": 3
-  }
+[{
+        "name": "micro intel i9 11th",
+        "price": "120000",
+        "thumbnail": "http://localhost:8080/img/1644261708592-intel_i9_11th.jpg",
+        "id": 1
+    },
+    {
+        "name": "Disco sólido 1TB M1 WD",
+        "price": "16000",
+        "thumbnail": "http://localhost:8080/img/1644261764851-ssd_1tb_wd.jpg",
+        "id": 2
+    },
+    {
+        "name": "memoria crucial 32GB",
+        "price": "30000",
+        "thumbnail": "http://localhost:8080/img/1644429429686-crucial_vegeance.jpg",
+        "id": 3
+    }
 ]

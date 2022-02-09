@@ -4,5 +4,11 @@
     "specie": "superheroe",
     "thumbnail": "http://localhost:8080/img/1644253383831-hulk.png",
     "id": 1
+  },
+  {
+    "name": "José Carrizo",
+    "specie": "pintor",
+    "thumbnail": "http://localhost:8080/img/1644340059523-gaudi.jpg",
+    "id": 2
   }
 ]
