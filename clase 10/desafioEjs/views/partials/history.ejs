@@ -1,0 +1,12 @@
+<% if (users.length > 0) { %>
+    <% users.forEach(user => { %>
+        <div>
+            <p>
+                <%=user.name  %>
+            </p>
+            <%=user.last_name %>
+                <%=user.age  %>
+        </div>
+        <% }) %>
+
+            <% } %>
