@@ -21,17 +21,17 @@
     <h1>Vista de Productos</h1>
     <br>
 
-    {{#if thereAreProducts}}
+    {{#if products.length}}
     <div class="table-responsive">
         <table class="table table-dark">
             <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Foto</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Pictures</th>
             </tr>
             {{#each products}}
             <tr>
-                <td>{{this.title}}</td>
+                <td>{{this.name}}</td>
                 <td>${{this.price}}</td>
                 <td><img width="50" src={{this.thumbnail}} alt="not found"></td>
             </tr>
