@@ -6,7 +6,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/products', productsRouter);
-app.use(express.static(__dirname + '/public'));
+/* app.use(express.static(__dirname + '/public'));  */
+/* app.use(express.static(__dirname + '/views')); */
 
 app.engine('handlebars', handlebars.engine());
 app.set('views', './views');

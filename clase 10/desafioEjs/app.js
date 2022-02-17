@@ -12,7 +12,10 @@ app.use(express.urlencoded({ extended: true }))
 let users = [];
 
 app.get('/', (req, res) => {
-    res.render('home')
+
+    res.render('home', {
+        users
+    })
 })
 
 app.post('/users', (req, res) => {
