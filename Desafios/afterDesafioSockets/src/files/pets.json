@@ -1,0 +1,13 @@
+[{
+        "name": "gato",
+        "specie": "gato",
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1641178901/img/intel_i5_10ma_imiwyn.jpg",
+        "id": 1
+    },
+    {
+        "name": "gato 2",
+        "specie": "gato 2",
+        "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1641178901/img/intel_i5_10ma_imiwyn.jpg",
+        "id": 2
+    }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Micro intel i5 4.8Ghz 11th",
+    "price": "40000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1641178901/img/intel_i5_10ma_imiwyn.jpg",
+    "id": 1
+  },
+  {
+    "name": "memoria crucial 32GB",
+    "price": "16000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639591756/img/crucial_vegeance_iywazh.jpg",
+    "id": 2
+  },
+  {
+    "name": "SSD 1TB M2",
+    "price": "17000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639592787/img/ssd_1tb_wd_xzsk8s.jpg",
+    "id": 3
+  },
+  {
+    "name": "Gabinete Sentey Z20",
+    "price": "30000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639593925/img/z20_gabo_jomzfo.jpg",
+    "id": 4
+  },
+  {
+    "name": "Fuente Thermaltake 600W",
+    "price": "13000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639594087/img/fuente_thermlatake_ejuzhr.jpg",
+    "id": 5
+  },
+  {
+    "name": "Placa de video GeForce 1050TI",
+    "price": "40000",
+    "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639593623/img/placa_de_video_1050ti2_osvr72.jpg",
+    "id": 6
+  }
+]

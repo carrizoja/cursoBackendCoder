@@ -36,7 +36,6 @@ router.put('/:num', (req, res) => {
     let param = req.params.num;
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
-    console.log(number);
     productService.updateProduct(number, req.body).then(result => res.send(result))
 })
 
