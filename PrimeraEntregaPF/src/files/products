@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Disco sólido WD 12TB M2",
+    "price": "25000",
+    "stock": "40",
+    "description": "Disco sólido de 1TB M2 Western Digital",
+    "role": "admin",
+    "thumbnail": "http://localhost:8080/img/1646347594467-ssd_1tb_wd.jpg",
+    "id": 1
+  },
+  {
+    "name": "Microprocesador Intel i9  4.8Ghz 11va Gen",
+    "price": "40000",
+    "stock": "20",
+    "description": "Microprocesador intel i9 de 11va Generación",
+    "role": "admin",
+    "thumbnail": "http://localhost:8080/img/1646347693379-intel_i9_11th.jpg",
+    "id": 2
+  },
+  {
+    "name": "Memoria Crucial 32GB RGB 3200Mhz",
+    "price": "30000",
+    "stock": "45",
+    "description": "Memoria RAM Crucial Vengeance RGB 32GB 3200Mhz",
+    "role": "admin",
+    "thumbnail": "http://localhost:8080/img/1646347769321-crucial_vegeance.jpg",
+    "id": 3
+  }
+]
