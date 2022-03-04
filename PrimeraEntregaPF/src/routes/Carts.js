@@ -33,7 +33,7 @@ router.post('/:idCart/product/:idProduct', (req, res) => {
     if (isNaN(param1)) return res.status(400).send({ error: "Not a number" })
     let idCart = parseInt(param1);
     let param2 = req.params.idProduct;
-    if (isNan(param2)) return res.status(400).send({ error: "Not a number" })
+    if (isNaN(param2)) return res.status(400).send({ error: "Not a number" })
     let idProduct = parseInt(param2)
     cartService.addProduct(idCart, idProduct).then(result => res.send(result));
 })
