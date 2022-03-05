@@ -18,6 +18,9 @@ router.get('/:num', (req, res) => {
 
 router.delete('/:num', (req, res) => {
     let param = req.params.num;
+    let product = req.body;
+    console.log(product);
+    if (product.role !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
     console.log(number);

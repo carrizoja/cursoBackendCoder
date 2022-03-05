@@ -89,6 +89,38 @@ class CartsManager {
 
     }
 
+    deleteProduct = async(idCart, idProduct) => {
+        if ((!idCart) || (!idProduct)) return { status: "error", error: "Ids needed" }
+        if (fs.existsSync(pathToCarts)) {
+            try {
+                let dataCarts = await fs.promises.readFile(pathToCarts, 'utf-8')
+                let carts = JSON.parse(dataCarts);
+                let cart = carts.find(c => c.id === idCart)
+                let newProducts = cart.products.filter(p => p !== idProduct);
+                cart.products = [];
+                cart.products = JSON.parse(JSON.stringify(newProducts));
+                if (cart) {
+                    await fs.promises.writeFile(pathToCarts, JSON.stringify(carts, null, 2))
+                    return { status: "success", payload: cart }
+                } else return { status: "error", message: "cart not found" }
+            } catch (error) {
+                return { status: "error", error: error }
+            }
+
+        } else {
+            try {
+                cart.id = 1;
+                cart.products = [];
+                await fs.promises.writeFile(pathToCarts, JSON.stringify([cart], null, 2));
+                return { status: "success", message: "Added 1 cart" }
+
+            } catch (error) {
+                return { status: "error", error: error }
+            }
+
+        }
+    }
+
     addProduct = async(idCart, idProduct) => {
         if ((!idCart) || (!idProduct)) return { status: "error", error: "Ids needed" }
         if (fs.existsSync(pathToCarts)) {
@@ -97,16 +129,14 @@ class CartsManager {
                 let carts = JSON.parse(dataCarts);
 
                 let cart = carts.find(c => c.id === idCart)
-                console.log(cart);
                 if (cart) {
                     let dataProducts = await fs.promises.readFile(pathToProducts, 'utf-8')
                     let products = JSON.parse(dataProducts);
                     let product = products.find(p => p.id === idProduct)
-                    console.log(product.id);
                     if (product) {
                         cart.products.push(product.id);
                         await fs.promises.writeFile(pathToCarts, JSON.stringify(carts, null, 2))
-                        console.log(cart);
+
                         return { status: "sucess", payload: cart }
                     } else return { status: "error", message: "product not found" }
 
@@ -130,6 +160,7 @@ class CartsManager {
 
         }
     }
+
 
 }
 

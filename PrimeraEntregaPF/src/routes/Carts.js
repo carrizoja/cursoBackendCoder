@@ -15,6 +15,8 @@ router.get('/:num', (req, res) => {
     cartService.findById(number).then(result => res.send(result))
 })
 
+
+
 router.delete('/:num', (req, res) => {
     let param = req.params.num;
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
@@ -29,13 +31,24 @@ router.post('/', (req, res) => {
 
 // Post que agrega productos en el carrito
 router.post('/:idCart/product/:idProduct', (req, res) => {
+        let param1 = req.params.idCart;
+        if (isNaN(param1)) return res.status(400).send({ error: "Not a number" })
+        let idCart = parseInt(param1);
+        let param2 = req.params.idProduct;
+        if (isNaN(param2)) return res.status(400).send({ error: "Not a number" })
+        let idProduct = parseInt(param2)
+        cartService.addProduct(idCart, idProduct).then(result => res.send(result));
+    })
+    // Borra un producto determinado de un carrito en particular
+
+router.delete('/:idCart/product/:idProduct', (req, res) => {
     let param1 = req.params.idCart;
     if (isNaN(param1)) return res.status(400).send({ error: "Not a number" })
     let idCart = parseInt(param1);
     let param2 = req.params.idProduct;
     if (isNaN(param2)) return res.status(400).send({ error: "Not a number" })
     let idProduct = parseInt(param2)
-    cartService.addProduct(idCart, idProduct).then(result => res.send(result));
+    cartService.deleteProduct(idCart, idProduct).then(result => res.send(result));
 })
 
 router.put('/:num', (req, res) => {
