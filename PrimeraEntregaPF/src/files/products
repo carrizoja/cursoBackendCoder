@@ -18,12 +18,12 @@
     "id": 2
   },
   {
-    "name": "Memoria Crucial 32GB RGB 3200Mhz",
+    "name": "Memoria Crucial Vengeance 32GB RGB ",
     "price": "30000",
     "stock": "45",
     "description": "Memoria RAM Crucial Vengeance RGB 32GB 3200Mhz",
     "role": "admin",
-    "thumbnail": "http://localhost:8080/img/1646347769321-crucial_vegeance.jpg",
+    "thumbnail": "http://localhost:8080/img/1646523014320-crucial_vegeance.jpg",
     "id": 3
   }
 ]

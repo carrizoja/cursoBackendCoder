@@ -16,15 +16,22 @@ router.get('/:num', (req, res) => {
     productService.findById(number).then(result => res.send(result))
 })
 
-router.delete('/:num', (req, res) => {
+// Ruta para borrar como admin
+
+router.delete('/:num/user/:admin', (req, res) => {
     let param = req.params.num;
-    let product = req.body;
-    console.log(product);
-    if (product.role !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
+    let admin = req.params.admin
+    if (admin !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
-    console.log(number);
     productService.deleteProduct(number).then(result => res.send(result))
+})
+
+router.delete('/:num/', (req, res) => {
+    let param = req.params.num;
+    if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
+    return res.status(401).send({ error: "Access denied. You aren't an Admin" })
+
 })
 
 router.post('/', uploader.single('file'), (req, res) => {
@@ -37,11 +44,21 @@ router.post('/', uploader.single('file'), (req, res) => {
     productService.add(product).then(result => res.send(result));
 })
 
-router.put('/:num', (req, res) => {
+router.put('/:num/user/:admin', (req, res) => {
     let param = req.params.num;
+    let admin = req.params.admin;
+    if (admin !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
     productService.updateProduct(number, req.body).then(result => res.send(result))
+})
+
+router.put('/:num', (req, res) => {
+    let param = req.params.num;
+    if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
+    return res.status(401).send({ error: "Access denied. You aren't an Admin" })
+        /*   let number = parseInt(param);
+          productService.updateProduct(number, req.body).then(result => res.send(result)) */
 })
 
 
