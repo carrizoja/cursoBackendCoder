@@ -36,6 +36,10 @@ router.delete('/:num/', (req, res) => {
 
 router.post('/', uploader.single('file'), (req, res) => {
     let product = req.body;
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    today.toUTCString();
+    product.timestamp = today;
     if (product.role !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
 
     let file = req.file;
@@ -43,6 +47,8 @@ router.post('/', uploader.single('file'), (req, res) => {
     product.thumbnail = req.protocol + "://" + req.hostname + ":8080/img/" + file.filename;
     productService.add(product).then(result => res.send(result));
 })
+
+// Ruta para editar como Admin
 
 router.put('/:num/user/:admin', (req, res) => {
     let param = req.params.num;
@@ -57,8 +63,6 @@ router.put('/:num', (req, res) => {
     let param = req.params.num;
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     return res.status(401).send({ error: "Access denied. You aren't an Admin" })
-        /*   let number = parseInt(param);
-          productService.updateProduct(number, req.body).then(result => res.send(result)) */
 })
 
 

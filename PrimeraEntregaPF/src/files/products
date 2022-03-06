@@ -1,29 +1,42 @@
 [
   {
-    "name": "Disco sólido WD 12TB M2",
-    "price": "25000",
-    "stock": "40",
-    "description": "Disco sólido de 1TB M2 Western Digital",
+    "name": "Gabinete Sentey Z20",
+    "price": "35000",
+    "stock": "25",
+    "description": "Gabinete de la línea Sentey modelo Z20 RGB",
     "role": "admin",
-    "thumbnail": "http://localhost:8080/img/1646347594467-ssd_1tb_wd.jpg",
+    "timestamp": "2022-03-06T01:47:08.003Z",
+    "thumbnail": "http://localhost:8080/img/1646531227999-z20_gabo_jomzfo.jpg",
     "id": 1
   },
   {
-    "name": "Microprocesador Intel i9  4.8Ghz 11va Gen",
-    "price": "40000",
-    "stock": "20",
-    "description": "Microprocesador intel i9 de 11va Generación",
+    "name": "Memoria Crucial Vengeance 32GB RGB",
+    "price": "20000",
+    "stock": "35",
+    "description": "Memoria Crucial Vengeance de 32GB RGB. ¡Ideal para gamers!",
     "role": "admin",
-    "thumbnail": "http://localhost:8080/img/1646347693379-intel_i9_11th.jpg",
+    "timestamp": "2022-03-06T01:48:20.418Z",
+    "thumbnail": "http://localhost:8080/img/1646531300416-crucial_vegeance.jpg",
     "id": 2
   },
   {
-    "name": "Memoria Crucial Vengeance 32GB RGB ",
-    "price": "30000",
-    "stock": "45",
-    "description": "Memoria RAM Crucial Vengeance RGB 32GB 3200Mhz",
+    "name": "Micro intel i5 4.9Ghz 11va Gen",
+    "price": "40000",
+    "stock": "30",
+    "description": "Microprocesador Intel i5 4.9Ghz de onceava generación.",
     "role": "admin",
-    "thumbnail": "http://localhost:8080/img/1646523014320-crucial_vegeance.jpg",
+    "timestamp": "2022-03-06T01:49:31.752Z",
+    "thumbnail": "http://localhost:8080/img/1646531371751-intel_i9_11th.jpg",
     "id": 3
+  },
+  {
+    "name": "Disco SSD M2 1TB WD",
+    "price": "18000",
+    "stock": "40",
+    "description": "Disco sólido M2 de 1TB de capacidad Western Digital.",
+    "role": "admin",
+    "timestamp": "2022-03-06T01:50:26.649Z",
+    "thumbnail": "http://localhost:8080/img/1646531426646-ssd_1tb_wd.jpg",
+    "id": 4
   }
 ]
