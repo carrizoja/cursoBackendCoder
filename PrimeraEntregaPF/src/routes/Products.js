@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const ProductManager = require('../Managers/Products');
+const { middlewareAuth } = require('../middlewares/middlewareProducts');
 const uploader = require('../services/Upload');
+
+
 
 const productService = new ProductManager();
 router.get('/', (req, res) => {
@@ -16,31 +19,25 @@ router.get('/:num', (req, res) => {
     productService.findById(number).then(result => res.send(result))
 })
 
-// Ruta para borrar como admin
-
-router.delete('/:num/user/:admin', (req, res) => {
+router.delete('/:num', middlewareAuth, (req, res) => {
     let param = req.params.num;
-    let admin = req.params.admin
-    if (admin !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
     productService.deleteProduct(number).then(result => res.send(result))
 })
 
-router.delete('/:num/', (req, res) => {
-    let param = req.params.num;
-    if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
-    return res.status(401).send({ error: "Access denied. You aren't an Admin" })
-
-})
-
-router.post('/', uploader.single('file'), (req, res) => {
+router.post('/', middlewareAuth, uploader.single('file'), (req, res) => {
     let product = req.body;
+    let price = parseInt(product.price);
+    let stock = parseInt(product.stock);
+    if (product.name == "") return res.status(500).send({ error: "There isn't a name for the product. Please insert a name" })
+    if (isNaN(price)) return res.status(400).send({ error: "Not a valid number for price" })
+    if (isNaN(stock)) return res.status(400).send({ error: "Not a valid number for stock" })
+    if (product.description == "") return res.status(500).send({ error: "There isn't a description for the product. Please insert something!" })
     const timeElapsed = Date.now();
     const today = new Date(timeElapsed);
     today.toUTCString();
     product.timestamp = today;
-    if (product.role !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
 
     let file = req.file;
     if (!file) return res.status(500).send({ error: "Couldn't upload file" })
@@ -48,23 +45,37 @@ router.post('/', uploader.single('file'), (req, res) => {
     productService.add(product).then(result => res.send(result));
 })
 
-// Ruta para editar como Admin
-
-router.put('/:num/user/:admin', (req, res) => {
+router.put('/:num', middlewareAuth, (req, res) => {
     let param = req.params.num;
-    let admin = req.params.admin;
-    if (admin !== "admin") return res.status(401).send({ error: "Access denied. You aren't an Admin" })
+    let product = req.body;
+
+
+    if (product.hasOwnProperty('name')) {
+        if (product.name == "") {
+            return res.status(500).send({ error: "There isn't a name for the product. Please insert a name" })
+        }
+    }
+    if (product.hasOwnProperty('price')) {
+        let price = parseInt(product.price);
+        if (isNaN(price)) {
+            return res.status(400).send({ error: "Not a valid number for price" })
+        }
+    }
+    if (product.hasOwnProperty('stock')) {
+        let stock = parseInt(product.stock);
+        if (isNaN(stock)) {
+            return res.status(400).send({ error: "Not a valid number for stock" })
+        }
+    }
+    if (product.hasOwnProperty('description')) {
+        if (product.description == "") {
+            return res.status(500).send({ error: "There isn't a description of a product. Please insert something!" })
+        }
+    }
+
     if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
     let number = parseInt(param);
-    productService.updateProduct(number, req.body).then(result => res.send(result))
+    productService.updateProduct(number, product).then(result => res.send(result))
 })
-
-router.put('/:num', (req, res) => {
-    let param = req.params.num;
-    if (isNaN(param)) return res.status(400).send({ error: "Not a number" })
-    return res.status(401).send({ error: "Access denied. You aren't an Admin" })
-})
-
-
 
 module.exports = router;

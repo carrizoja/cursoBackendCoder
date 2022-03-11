@@ -10,33 +10,21 @@
     "id": 1
   },
   {
-    "name": "Memoria Crucial Vengeance 32GB RGB",
-    "price": "20000",
-    "stock": "35",
-    "description": "Memoria Crucial Vengeance de 32GB RGB. ¡Ideal para gamers!",
-    "role": "admin",
-    "timestamp": "2022-03-06T01:48:20.418Z",
-    "thumbnail": "http://localhost:8080/img/1646531300416-crucial_vegeance.jpg",
+    "name": "Micro intel i5 11th Gen",
+    "stock": "10",
+    "price": "45000",
+    "description": "Microprocesador intel i5 de 11va Generación",
+    "timestamp": "2022-03-11T20:42:09.381Z",
+    "thumbnail": "http://localhost:8080/img/1647031329375-intel_i9_11th.jpg",
     "id": 2
   },
   {
-    "name": "Micro intel i5 4.9Ghz 11va Gen",
-    "price": "40000",
-    "stock": "30",
-    "description": "Microprocesador Intel i5 4.9Ghz de onceava generación.",
-    "role": "admin",
-    "timestamp": "2022-03-06T01:49:31.752Z",
-    "thumbnail": "http://localhost:8080/img/1646531371751-intel_i9_11th.jpg",
+    "name": "Memoria Crucial 32GB RGB",
+    "stock": "15",
+    "price": "30000",
+    "description": "Memoria RAM Crucial Vengeance RGB de 32GB 3000Mhz",
+    "timestamp": "2022-03-11T20:43:41.586Z",
+    "thumbnail": "http://localhost:8080/img/1647031421583-crucial_vegeance.jpg",
     "id": 3
-  },
-  {
-    "name": "Disco SSD M2 1TB WD",
-    "price": "18000",
-    "stock": "40",
-    "description": "Disco sólido M2 de 1TB de capacidad Western Digital.",
-    "role": "admin",
-    "timestamp": "2022-03-06T01:50:26.649Z",
-    "thumbnail": "http://localhost:8080/img/1646531426646-ssd_1tb_wd.jpg",
-    "id": 4
   }
 ]
