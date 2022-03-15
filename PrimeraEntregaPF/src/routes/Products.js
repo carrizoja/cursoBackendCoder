@@ -49,7 +49,6 @@ router.put('/:num', middlewareAuth, (req, res) => {
     let param = req.params.num;
     let product = req.body;
 
-
     if (product.hasOwnProperty('name')) {
         if (product.name == "") {
             return res.status(500).send({ error: "There isn't a name for the product. Please insert a name" })

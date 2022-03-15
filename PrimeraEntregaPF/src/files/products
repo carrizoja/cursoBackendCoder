@@ -10,10 +10,10 @@
     "id": 1
   },
   {
-    "name": "Micro intel i5 11th Gen",
-    "stock": "10",
-    "price": "45000",
-    "description": "Microprocesador intel i5 de 11va Generación",
+    "name": "intel i5 11va Gen",
+    "stock": "50",
+    "price": "67000",
+    "description": "Microprocesador intel i5 11va generación",
     "timestamp": "2022-03-11T20:42:09.381Z",
     "thumbnail": "http://localhost:8080/img/1647031329375-intel_i9_11th.jpg",
     "id": 2
