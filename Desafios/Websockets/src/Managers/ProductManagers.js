@@ -43,6 +43,8 @@ class ProductManager {
         await fs.promises.writeFile(productPath, JSON.stringify([product], null, 2))
         return { status: "success", message: "Product added" }
     }
+
+  
 }
 
 module.exports = ProductManager;

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Gabinete Sentey Z20",
+    "price": "35000",
+    "stock": "25",
+    "description": "Gabinete de la línea Sentey modelo Z20 RGB",
+    "role": "admin",
+    "timestamp": "2022-03-06T01:47:08.003Z",
+    "thumbnail": "http://localhost:8080/img/1646531227999-z20_gabo_jomzfo.jpg",
+    "id": 1
+  },
+  {
+    "name": "micro intel 5",
+    "description": "este es un micro intel",
+    "price": "40000",
+    "stock": "10",
+    "timestamp": "2022-03-31T17:41:20.149Z",
+    "thumbnail": "http://localhost:8080/img/1648748480145-intel_i9_11th.jpg",
+    "id": 2
+  },
+  {
+    "name": "memoria crucial 32GB",
+    "price": "28000",
+    "stock": "40",
+    "description": "Memoria Crucial de alto rendimiento RGB",
+    "timestamp": "2022-03-31T21:42:45.701Z",
+    "thumbnail": "http://localhost:8080/img/1648762965698-crucial_vegeance.jpg",
+    "id": 3
+  }
+]
