@@ -29,8 +29,6 @@ class FsProductDao {
 
 }
 
-// async addProduct(product) {
-// 	return await this.productManager.addProduct(product);
-// }
+
 
 module.exports = FsProductDao;
