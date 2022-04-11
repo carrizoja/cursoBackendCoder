@@ -11,7 +11,7 @@ class ChatManager {
                 let chats = JSON.parse(data);
                 if (chats.length == 0) {
                     // Is the first chats
-                    product.id = 1;
+                    chat.id = 1;
                     chats.push(chat);
                     await fs.promises.writeFile(pathToChats, JSON.stringify(chats, null, 2))
                     return { status: "success", message: "Added 1 chat" }

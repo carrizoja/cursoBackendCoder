@@ -45,6 +45,26 @@ io.on('connection', async socket => {
         let products = await productService.getAll();
         io.emit('productLog', products)
     })
+    socket.on('sendUser', async data => {
+        // insert json into file
+        let author = {
+            name: data.name,
+            lastname: data.lastname,
+            id: data.email,
+            avatar: data.thumbnail,
+            age: data.age,
+            nickname: data.nickname
+
+        }
+        let chat = { author }
+        await chatService.add(chat);
+        let messages = await chatService.add();
+        io.emit('messageLog', messages)
+        let users = await chatService.get();
+        let user = users.payload.find(u => u.author.nickname === data.nickname)
+        io.emit('userLog', user.author.nickname)
+    })
+
 })
 
 
@@ -61,6 +81,7 @@ io.on('connection', (socket) => {
 
         io.emit('log', log) // Con un io le llega a todos
         await chatService.add(data);
+        console.log(data);
 
 
     })

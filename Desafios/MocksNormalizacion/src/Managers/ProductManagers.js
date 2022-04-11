@@ -5,7 +5,6 @@ const pathToProducts = __dirname + '/../files/products';
 class ProductManager {
 
     add = async(product) => {
-        console.log(product)
         if (fs.existsSync(pathToProducts)) {
             try {
                 let data = await fs.promises.readFile(pathToProducts, 'utf-8');
