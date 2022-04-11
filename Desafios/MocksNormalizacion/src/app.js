@@ -3,6 +3,7 @@ const { Server } = require('socket.io');
 const ProductManager = require('./Managers/ProductManagers.js')
 const ChatManager = require('./Managers/ChatManagers.js')
 const faker = require('faker');
+const normalizr = require('normalizr');
 faker.locale = "es";
 const productService = new ProductManager();
 const { commerce, image, datatype } = faker;
@@ -78,15 +79,33 @@ io.on('connection', (socket) => {
         // para emitir un evento a todos menos al mío. Por cada Emit va un ON del otro lado (front)
     socket.on('message', async data => {
         log.push(data);
+        await chatService.add(data);
+        // Normalization process
+        let chats = await chatService.get();
+        chats = chats.payload;
+
+        const author = new normalizr.schema.Entity('author');
+        const mesagges = new normalizr.schema.Entity('mesagges', {
+            author: author,
+        });
+        const normalizedData = normalizr.normalize(chats, [mesagges]);
+        /* let normalizedData = normalizr.normalize(chats, mesagges); */
+        console.log(JSON.stringify(normalizedData, null, '\t'));
 
         io.emit('log', log) // Con un io le llega a todos
-        await chatService.add(data);
-        console.log(data);
 
 
     })
-    socket.on('registered', data => {
+    socket.on('registered', async data => {
+
         socket.emit('log', log); // envía uno a uno (cliente a servidor)
 
     })
 }); //evento para poner a escuchar el socket
+
+
+
+
+/* console.log(`Longitud total de la data normal: ${JSON.stringify(empresa,null,'\t').length}`);
+console.log(`Longitud total de la data normalizada: ${JSON.stringify(normalizedData,null,'\t').length}`);
+console.log(`Porcentaje de reducción: ${(JSON.stringify(empresa,null,'\t').length - JSON.stringify(normalizedData,null,'\t').length)/JSON.stringify(empresa,null,'\t').length*100}%`); */
