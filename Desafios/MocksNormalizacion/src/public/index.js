@@ -58,3 +58,17 @@ socket.on('log', data => {
     })
     log.innerHTML = messages;
 });
+
+socket.on('normalizedData', data => {
+    let log = document.getElementById('log');
+    // denormalization process with normalizr
+    const author = new normalizr.schema.Entity('author');
+    const mesagges = new normalizr.schema.Entity('mesagges', {
+        author: author,
+    });
+    let denormalizedData = new normalizr.denormalize(data.result, [mesagges], data.entities);
+    console.log(denormalizedData);
+    console.log(`Longitud total de la data normalizada: ${JSON.stringify(data,null,'\t').length}`);
+    console.log(`Porcentaje de reducción: ${(JSON.stringify(mesagges,null,'\t').length - JSON.stringify(data,null,'\t').length)/JSON.stringify(mesagges,null,'\t').length*100}%`)
+
+})

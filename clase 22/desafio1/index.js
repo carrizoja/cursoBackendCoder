@@ -96,5 +96,5 @@ console.log(`Porcentaje de reducción: ${(JSON.stringify(empresa,null,'\t').leng
 
 // Desnormalizar 
 
-let normalData = denormalize(normalizedData.result, company, normalizedData.entities);
+let normalData = new normalizr.denormalize(normalizedData.result, company, normalizedData.entities);
 console.log(JSON.stringify(normalData, null, '\t'));

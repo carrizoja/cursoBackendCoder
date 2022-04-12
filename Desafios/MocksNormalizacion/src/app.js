@@ -89,11 +89,10 @@ io.on('connection', (socket) => {
             author: author,
         });
         const normalizedData = normalizr.normalize(chats, [mesagges]);
-        /* let normalizedData = normalizr.normalize(chats, mesagges); */
-        console.log(JSON.stringify(normalizedData, null, '\t'));
 
+        ;
         io.emit('log', log) // Con un io le llega a todos
-
+        io.emit('normalizedData', normalizedData)
 
     })
     socket.on('registered', async data => {
@@ -102,10 +101,3 @@ io.on('connection', (socket) => {
 
     })
 }); //evento para poner a escuchar el socket
-
-
-
-
-/* console.log(`Longitud total de la data normal: ${JSON.stringify(empresa,null,'\t').length}`);
-console.log(`Longitud total de la data normalizada: ${JSON.stringify(normalizedData,null,'\t').length}`);
-console.log(`Porcentaje de reducción: ${(JSON.stringify(empresa,null,'\t').length - JSON.stringify(normalizedData,null,'\t').length)/JSON.stringify(empresa,null,'\t').length*100}%`); */
