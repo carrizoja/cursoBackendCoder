@@ -2,7 +2,7 @@ const MongoProductDao = require('./products/mongoProductDao.js');
 const MongoCartDao = require('./carts/mongoCartDao.js');
 const fsProducts = require('./products/fsProducts.js')
 const fsCarts = require('./carts/fsCarts.js')
-const dbToUse = 'fs';
+const dbToUse = 'mongo';
 
 let productDao;
 let cartDao;

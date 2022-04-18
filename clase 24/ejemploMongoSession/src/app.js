@@ -12,8 +12,8 @@ const server = app.listen(PORT, () => {
 app.use(cookieParser());
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-        ttl: 20
+        mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/mySessionsDatabase?retryWrites=true&w=majority',
+        ttl: 200
     }),
     secret: 'mongosecretcoderfeliz2022',
     resave: false,
