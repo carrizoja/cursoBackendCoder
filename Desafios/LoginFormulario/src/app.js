@@ -14,6 +14,8 @@ const UserModel = require('./models/User');
 const bcrypt = require('bcryptjs');
 const connectWithMongo = require('./config/db');
 const { response } = require('express');
+const path = require('path');
+const { pathToFileURL } = require('url');
 
 
 // -------------- create Faker Objects --------------
@@ -42,9 +44,9 @@ const server = app.listen(8080, () => {
 })
 const io = new Server(server);
 app.use(express.json());
-app.set("view engine", "ejs");
 /* app.use(express.static(__dirname + '/public')) */
-app.set('views', './views')
+const publicPath = path.join(__dirname, 'public');
+app.use(express.static(publicPath));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
@@ -60,6 +62,9 @@ app.use(session({
     secret: 'mongosecretcoderfeliz2022',
     resave: false,
     saveUninitialized: false,
+    cookie: {
+        maxAge: 20000
+    }
 }))
 
 const isAuth = (req, res, next) => {
@@ -73,44 +78,50 @@ const isAuth = (req, res, next) => {
 // ---------------------------------------------------------------------------------------
 
 // ----------------------------- Routes -------------------------------------------------
-app.get('/login', (req, res) => {
+app.get('/', isAuth, (req, res) => {
     req.session.isAuth = true;
     req.session.cualquierCosa = { a: 3, c: 1 }
     const error = req.session.error;
     delete req.session.error;
-    res.render("login", { err: error });
+    res.sendFile(path.join(publicPath, '/index.html'));
 
 })
 app.get('/register', (req, res) => {
     const error = req.session.error;
     delete req.session.error;
-    res.render("register", { err: error });
+    res.sendFile(path.join(publicPath, '/register.html'));
 })
-app.post('/login', async(req, res) => {
+
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(publicPath, '/login.html'));
+})
+
+app.post('/loginForm', async(req, res) => {
 
     const { email, password } = req.body;
+    console.log(email, password);
     const user = await UserModel.findOne({ email });
-
+    console.log(user);
     if (!user) {
-        return res.redirect('/login');
+        return res.sendFile(path.join(publicPath, '/login.html'));
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-        return res.redirect('/login');
+        return res.sendFile(path.join(publicPath, '/login.html'));
     }
 
-    /*res.redirect("./public/index.html"); */
-    res.sendFile('./public/index.html', { root: __dirname });
+    res.sendFile(path.join(publicPath, '/index.html'));
 
 })
 
-app.post('/register', async(req, res) => {
+app.post('/registerForm', async(req, res) => {
     const { username, email, password } = req.body;
 
     let user = await UserModel.findOne({ email });
     if (user) {
-        return res.redirect('/register');
+        res.sendFile(path.join(publicPath, '/register.html'));
     }
 
     const hashedPsw = await bcrypt.hash(password, 12);
@@ -122,23 +133,18 @@ app.post('/register', async(req, res) => {
     });
 
     await user.save();
-    res.redirect('/login');
+    return res.sendFile(path.join(publicPath, '/login.html'));
 
 })
 
-app.get('/', isAuth, (req, res) => {
-    /*  res.redirect('./public/index.html'); */
-    res.render('login')
-})
-
-app.post('/logout', (req, res) => {
+/* app.post('/logout', (req, res) => {
     req.seesion.destroy(err => {
         if (err) {
             throw err;
         }
         res.redirect('/login');
     });
-})
+}) */
 
 // ----------------------------------End Routes ------------------------------------------------------
 
