@@ -10,8 +10,13 @@ const normalizr = require('normalizr');
 faker.locale = "es";
 const productService = new ProductManager();
 const { commerce, image, datatype } = faker;
+const UserModel = require('./models/User');
+const bcrypt = require('bcryptjs');
+const connectWithMongo = require('./config/db');
+const { response } = require('express');
 
-/* let objects = []; */
+
+// -------------- create Faker Objects --------------
 
 async function createObjects() {
     for (let i = 0; i < 6; i++) {
@@ -27,30 +32,115 @@ async function createObjects() {
 }
 createObjects();
 
+// -----------------------------------------------------
+
+
 const app = express();
+connectWithMongo.connectWithMongo();
 const server = app.listen(8080, () => {
     console.log("Listening on port 8080")
 })
 const io = new Server(server);
 app.use(express.json());
-app.use(express.static(__dirname + '/public'))
+app.set("view engine", "ejs");
+/* app.use(express.static(__dirname + '/public')) */
+app.set('views', './views')
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
-// Sesion in Mongo DB
+let users = [];
+
+// -------------------------- Sesion in Mongo DB ---------------------------------------
 
 app.use(session({
     store: mongoStore.create({
-        mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/mySessionsDatabase?retryWrites=true&w=majority',
         ttl: 20
     }),
     secret: 'mongosecretcoderfeliz2022',
     resave: false,
     saveUninitialized: false,
 }))
+
+const isAuth = (req, res, next) => {
+    if (req.session.isAuth) {
+        next();
+    } else {
+        res.redirect('/login');
+    }
+}
+
+// ---------------------------------------------------------------------------------------
+
+// ----------------------------- Routes -------------------------------------------------
 app.get('/login', (req, res) => {
+    req.session.isAuth = true;
     req.session.cualquierCosa = { a: 3, c: 1 }
-    res.send('Hola, su sesión ha iniciado')
+    const error = req.session.error;
+    delete req.session.error;
+    res.render("login", { err: error });
+
+})
+app.get('/register', (req, res) => {
+    const error = req.session.error;
+    delete req.session.error;
+    res.render("register", { err: error });
+})
+app.post('/login', async(req, res) => {
+
+    const { email, password } = req.body;
+    const user = await UserModel.findOne({ email });
+
+    if (!user) {
+        return res.redirect('/login');
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+        return res.redirect('/login');
+    }
+
+    /*res.redirect("./public/index.html"); */
+    res.sendFile('./public/index.html', { root: __dirname });
+
 })
 
+app.post('/register', async(req, res) => {
+    const { username, email, password } = req.body;
+
+    let user = await UserModel.findOne({ email });
+    if (user) {
+        return res.redirect('/register');
+    }
+
+    const hashedPsw = await bcrypt.hash(password, 12);
+
+    user = new UserModel({
+        username,
+        email,
+        password: hashedPsw
+    });
+
+    await user.save();
+    res.redirect('/login');
+
+})
+
+app.get('/', isAuth, (req, res) => {
+    /*  res.redirect('./public/index.html'); */
+    res.render('login')
+})
+
+app.post('/logout', (req, res) => {
+    req.seesion.destroy(err => {
+        if (err) {
+            throw err;
+        }
+        res.redirect('/login');
+    });
+})
+
+// ----------------------------------End Routes ------------------------------------------------------
 
 // Socket ya toma automáticamente json. No es necesario aclarar con app.use(express.JSON());
 // Services
@@ -58,20 +148,6 @@ app.get('/login', (req, res) => {
 const chatService = new ChatManager();
 io.on('connection', async socket => {
     console.log("Cliente conectado");
-
-    /*   app.use(session({
-          store: mongoStore.create({
-              mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-              ttl: 20
-          }),
-          secret: 'mongosecretcoderfeliz2022',
-          resave: false,
-          saveUninitialized: false,
-      }))
-      app.get('/login', (req, res) => {
-          req.session.cualquierCosa = { a: 3, c: 1 }
-          res.send('Hola, su sesión ha iniciado')
-      }) */
 
     let products = await productService.getAll();
     io.emit('productLog', products)
