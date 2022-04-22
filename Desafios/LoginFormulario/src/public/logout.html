@@ -11,7 +11,10 @@
 </head>
 
 <body>
-    <h1>Esta página se redireccionará pronto...</h1>
+    <div id="logOutContainer">
+        <h1>Esta página se redireccionará pronto...</h1>
+    </div>
+
 
 </body>
 <script>
@@ -19,5 +22,7 @@
         window.location.href = './login';
     }, 3000);
 </script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/logout.js"></script>
 
 </html>

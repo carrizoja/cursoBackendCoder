@@ -49,7 +49,7 @@ app.use('/', express.static(publicPath));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
-let users = [];
+let userLogin;
 
 // -------------------------- Sesion in Mongo DB ---------------------------------------
 
@@ -123,6 +123,9 @@ app.post('/login', async(req, res) => {
             req.session.isAuth = true;
             req.session.email = email;
             res.redirect('/profile');
+            userLogin = user
+
+
         }
 
 
@@ -186,7 +189,7 @@ app.get('/logout', (req, res) => {
 const chatService = new ChatManager();
 io.on('connection', async socket => {
     console.log("Cliente conectado");
-
+    io.emit('userDataLog', userLogin);
     let products = await productService.getAll();
     io.emit('productLog', products)
     socket.on('sendProduct', async data => { // Por cada emit del lado del index.js hago un socket.on

@@ -10,6 +10,19 @@ userData.addEventListener('submit', (evt) => {
 
 });
 
+
+
+socket.on('userDataLog', (data) => {
+    const renderizar = () => {
+        let html = ""
+        html += ` 
+        <input class="buttonLogOutStyle" type="submit" value="Logout ${data.username} " id="logOutButton">
+        `
+        document.getElementById("logOutForm").innerHTML = html
+    }
+    renderizar();
+
+})
 socket.on('productLog', (data) => {
     let products = data.payload;
     let productsTemplate = document.getElementById("productsTemplate");
