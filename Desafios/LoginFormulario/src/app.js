@@ -13,9 +13,8 @@ const { commerce, image, datatype } = faker;
 const UserModel = require('./models/User');
 const bcrypt = require('bcryptjs');
 const connectWithMongo = require('./config/db');
-const { response } = require('express');
 const path = require('path');
-const { pathToFileURL } = require('url');
+const { get } = require('http');
 
 
 // -------------- create Faker Objects --------------
@@ -44,9 +43,9 @@ const server = app.listen(8080, () => {
 })
 const io = new Server(server);
 app.use(express.json());
-/* app.use(express.static(__dirname + '/public')) */
 const publicPath = path.join(__dirname, 'public');
-app.use(express.static(publicPath));
+app.use('/', express.static(publicPath));
+// req.body config
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
@@ -57,7 +56,7 @@ let users = [];
 app.use(session({
     store: mongoStore.create({
         mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/mySessionsDatabase?retryWrites=true&w=majority',
-        ttl: 20
+        ttl: 30
     }),
     secret: 'mongosecretcoderfeliz2022',
     resave: false,
@@ -69,27 +68,37 @@ app.use(session({
 
 const isAuth = (req, res, next) => {
     if (req.session.isAuth) {
+        console.log(req.session.isAuth)
         next();
     } else {
-        res.redirect('/login');
+        res.send(
+            `<p>No autorizado</p></br><a href="/login">Iniciar sesion</a>`
+        )
     }
 }
 
 // ---------------------------------------------------------------------------------------
 
 // ----------------------------- Routes -------------------------------------------------
+
 app.get('/', isAuth, (req, res) => {
-    req.session.isAuth = true;
-    req.session.cualquierCosa = { a: 3, c: 1 }
+
     const error = req.session.error;
     delete req.session.error;
-    res.sendFile(path.join(publicPath, '/index.html'));
+    res.sendFile(path.join(publicPath, '/profile.html'));
 
 })
+
 app.get('/register', (req, res) => {
     const error = req.session.error;
     delete req.session.error;
     res.sendFile(path.join(publicPath, '/register.html'));
+})
+
+app.get('/profile', isAuth, (req, res) => {
+    const error = req.session.error;
+    delete req.session.error;
+    res.sendFile(path.join(publicPath, '/profile.html'));
 })
 
 
@@ -97,54 +106,68 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(publicPath, '/login.html'));
 })
 
-app.post('/loginForm', async(req, res) => {
+app.post('/login', async(req, res) => {
 
     const { email, password } = req.body;
-    console.log(email, password);
     const user = await UserModel.findOne({ email });
-    console.log(user);
-    if (!user) {
-        return res.sendFile(path.join(publicPath, '/login.html'));
+    if (user != null) {
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (isMatch === false) {
+            res.send(
+                `<h1>Las contraseñas no coinciden. Regrese al login </h1></br><a href="/login">Regresar a Login</a>`
+            )
+        } else {
+            req.session.isAuth = true;
+            req.session.email = email;
+            res.redirect('/profile');
+        }
+
+
+    } else {
+        res.send(
+            `<h1>El usuario no existe. Debe registrarse</h1></br><a href="/register">Regresar a Registro</a>`
+        )
+
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-        return res.sendFile(path.join(publicPath, '/login.html'));
-    }
-
-    res.sendFile(path.join(publicPath, '/index.html'));
 
 })
 
-app.post('/registerForm', async(req, res) => {
+app.post('/register', async(req, res) => {
     const { username, email, password } = req.body;
-
     let user = await UserModel.findOne({ email });
     if (user) {
-        res.sendFile(path.join(publicPath, '/register.html'));
+        res.send(
+            `<h1>El usuario ${username} ya existe</h1></br><a href="/register">Regresar a Registro</a>&nbsp;&nbsp;<a href="/login">Ir a Login</a>`
+        )
+
+    } else {
+        const hashedPsw = await bcrypt.hash(password, 12);
+
+        user = new UserModel({
+            username,
+            email,
+            password: hashedPsw
+        });
+
+        await user.save();
+        return res.sendFile(path.join(publicPath, '/login.html'));
     }
 
-    const hashedPsw = await bcrypt.hash(password, 12);
 
-    user = new UserModel({
-        username,
-        email,
-        password: hashedPsw
-    });
-
-    await user.save();
-    return res.sendFile(path.join(publicPath, '/login.html'));
 
 })
 
-/* app.post('/logout', (req, res) => {
-    req.seesion.destroy(err => {
+app.post('/logout', (req, res) => {
+    req.session.destroy(err => {
         if (err) {
             throw err;
         }
-        res.redirect('/login');
+        res.redirect('/');
     });
-}) */
+})
+
+
 
 // ----------------------------------End Routes ------------------------------------------------------
 
@@ -183,8 +206,6 @@ io.on('connection', async socket => {
     })
 
 })
-
-
 
 // Chatbox
 

@@ -46,3 +46,63 @@ body {
 .form-title {
     font-family: 'Urbanist', sans-serif;
 }
+
+
+/* Form Styles */
+
+.formStyle {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+
+/* Button Style */
+
+.buttonStyle {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Form Logout */
+
+.formLogOutStyle {
+    justify-content: flex-end;
+}
+
+
+/* Button LogOut */
+
+.buttonLogOutStyle {
+    width: 200px;
+    background-color: #dd3c0b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Textbox Styles */
+
+.textBoxStyle {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1 class="titleHome">Sign Up</h1>
-    <form action="/registerForm" method="post">
+    <form class="formStyle" action="/register" method="post">
         <br> Email:
-        <input type="email" name="email" id="email">
+        <input class="textBoxStyle" type="email" name="email" id="email">
         <br> Username:
-        <input type="text" name="username" id="username">
+        <input class="textBoxStyle" type="text" name="username" id="username">
         <br> Password:
-        <input type="password" name="password" id="password">
+        <input class="textBoxStyle" type="password" name="password" id="password">
         <br>
-        <input type="submit" value="Register">
+        <input class="buttonStyle" type="submit" value="Register">
+        <br><br>
+        <a href="/login">Already have an account?</a>
     </form>
 </body>
 
