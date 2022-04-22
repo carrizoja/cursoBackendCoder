@@ -61,19 +61,18 @@ app.use(session({
     secret: 'mongosecretcoderfeliz2022',
     resave: false,
     saveUninitialized: false,
-    cookie: {
-        maxAge: 20000
-    }
+    /*   cookie: {
+          maxAge: 20000
+      } */
 }))
 
 const isAuth = (req, res, next) => {
     if (req.session.isAuth) {
-        console.log(req.session.isAuth)
+
         next();
     } else {
-        res.send(
-            `<p>No autorizado</p></br><a href="/login">Iniciar sesion</a>`
-        )
+        res.redirect('/unauthorized');
+
     }
 }
 
@@ -104,6 +103,10 @@ app.get('/profile', isAuth, (req, res) => {
 
 app.get('/login', (req, res) => {
     res.sendFile(path.join(publicPath, '/login.html'));
+})
+
+app.get('/unauthorized', (req, res) => {
+    res.sendFile(path.join(publicPath, '/unauthorized.html'));
 })
 
 app.post('/login', async(req, res) => {
@@ -163,9 +166,15 @@ app.post('/logout', (req, res) => {
         if (err) {
             throw err;
         }
-        res.redirect('/');
+        res.redirect('/logout');
     });
 })
+
+app.get('/logout', (req, res) => {
+    // function to setTimeOut to redirect to home page after 4 seconds  after logout
+    res.sendFile(path.join(publicPath, '/logout.html'));
+
+});
 
 
 
