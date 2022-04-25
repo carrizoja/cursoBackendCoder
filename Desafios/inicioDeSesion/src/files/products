@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Fantástico Algodón Pescado",
+    "price": "$105",
+    "id": 1,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?21709"
+  },
+  {
+    "name": "Hecho a mano Madera Raton",
+    "price": "$184",
+    "id": 2,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?25457"
+  },
+  {
+    "name": "Sabroso Hormigon Atún",
+    "price": "$173",
+    "id": 3,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?25653"
+  },
+  {
+    "name": "Sorprendente Metal Atún",
+    "price": "$139",
+    "id": 4,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?52881"
+  },
+  {
+    "name": "Guapo Plástico Camiseta",
+    "price": "$165",
+    "id": 5,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?12742"
+  },
+  {
+    "name": "Sorprendente Plástico Silla",
+    "price": "$126",
+    "id": 6,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?75162"
+  },
+  {
+    "name": "Rústico Madera Patatas fritas",
+    "price": "$187",
+    "id": 7,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?15211"
+  }
+]

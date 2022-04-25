@@ -1,4 +1,5 @@
 const socket = io();
+let username;
 let userData = document.getElementById("userForm");
 userData.addEventListener('submit', (evt) => {
     evt.preventDefault();
@@ -10,11 +11,14 @@ userData.addEventListener('submit', (evt) => {
 
 });
 
+
+
 socket.on('userDataLog', (data) => {
+    username = data;
     const renderizar = () => {
         let html = ""
         html += ` 
-        <input class="buttonLogOutStyle" type="submit" value="Logout ${data.username} " id="logOutButton">
+        <input class="buttonLogOutStyle" type="submit" value="Logout ${data} " id="logOutButton">
         `
         document.getElementById("logOutForm").innerHTML = html
     }
@@ -66,7 +70,7 @@ socket.on('log', data => {
     let log = document.getElementById('log');
     let messages = "";
     data.forEach(message => {
-        messages = messages + `${message.nickname} dice: ${message.message}<br/>`
+        messages = messages + `${username} dice: ${message.message}<br/>`
     })
     log.innerHTML = messages;
 });
