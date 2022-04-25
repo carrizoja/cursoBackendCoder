@@ -3,7 +3,14 @@
     width: 200px;
     height: 250px;
     border: 1px solid black;
+    box-shadow: 10px 7px 20px #000;
     border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.productcard:hover {
+    box-shadow: 15px 10px 30px #000;
+    transform: scale(1.1);
 }
 
 .productcard>img {
