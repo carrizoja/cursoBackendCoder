@@ -11,20 +11,20 @@ userData.addEventListener('submit', (evt) => {
 
 });
 
-
-
-socket.on('userDataLog', (data) => {
-    username = data;
+fetch('/profNameDisabled').then(res => res.json()).then(data => {
+    let username = data.username
+    console.log(username);
     const renderizar = () => {
         let html = ""
         html += ` 
-        <input class="buttonLogOutStyle" type="submit" value="Logout ${data} " id="logOutButton">
+        <input class="buttonLogOutStyle" type="submit" value="Logout ${username} " id="logOutButton">
         `
         document.getElementById("logOutForm").innerHTML = html
     }
     renderizar();
 
 })
+
 socket.on('productLog', (data) => {
     let products = data.payload;
     let productsTemplate = document.getElementById("productsTemplate");

@@ -52,8 +52,6 @@ app.use('/', express.static(publicPath));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
-let userLogin;
-
 // -------------------------- Sesion in Mongo DB ---------------------------------------
 
 app.use(session({
@@ -133,7 +131,6 @@ passport.use('login', new LocalStrategy({
             //Open session with user found
             req.session.isAuth = true;
             req.session.username = username;
-            userLogin = userFound.username;
             return done(null, userFound);
         })
     }
@@ -162,25 +159,29 @@ app.get('/', (req, res) => {
 
 app.get('/register', (req, res) => {
     if (req.isAuthenticated()) return res.redirect('/profile');
-    res.sendFile(path.join(publicPath, '/register.html'));
+    res.sendFile(path.join(publicPath, '/pages/register.html'));
 })
 
 app.get('/profile', isAuth, (req, res) => {
-
-    res.sendFile(path.join(publicPath, '/profile.html'));
+    res.sendFile(path.join(publicPath, '/pages/profile.html'));
 })
 
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(publicPath, '/login.html'));
+    res.sendFile(path.join(publicPath, '/pages/login.html'));
 })
 
 app.get('/unauthorized', (req, res) => {
-    res.sendFile(path.join(publicPath, '/unauthorized.html'));
+    res.sendFile(path.join(publicPath, '/pages/unauthorized.html'));
+})
+
+app.get('/profNameDisabled', (req, res) => {
+    console.log(req.user);
+    if (req.user) res.send(req.user);
 })
 
 app.post('/login', passport.authenticate('login', {
-    failureRedirect: '/login',
+    failureRedirect: '/userPassIncorrect',
 }), (req, res) => {
 
     res.redirect('/profile');
@@ -207,12 +208,16 @@ app.post('/logout', (req, res) => {
 
 app.get('/logout', (req, res) => {
     // function to setTimeOut to redirect to home page after 4 seconds  after logout
-    res.sendFile(path.join(publicPath, '/logout.html'));
+    res.sendFile(path.join(publicPath, '/pages/logout.html'));
 
 });
 
+app.get('/userPassIncorrect', (req, res) => {
+    res.sendFile(path.join(publicPath, '/pages/userPassIncorrect.html'));
+})
+
 app.get('/userExists', (req, res) => {
-    res.sendFile(path.join(publicPath, '/userExists.html'));
+    res.sendFile(path.join(publicPath, '/pages/userExists.html'));
 })
 
 
@@ -224,7 +229,6 @@ app.get('/userExists', (req, res) => {
 const chatService = new ChatManager();
 io.on('connection', async socket => {
     console.log("Cliente conectado");
-    io.emit('userDataLog', userLogin);
     let products = await productService.getAll();
     io.emit('productLog', products)
     socket.on('sendProduct', async data => { // Por cada emit del lado del index.js hago un socket.on
