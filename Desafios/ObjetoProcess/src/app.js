@@ -18,6 +18,8 @@ const { get } = require('http');
 const passport = require('passport');
 const User = require('./models/User');
 const LocalStrategy = require('passport-local').Strategy;
+const parseArgs = require("minimist");
+const { fork } = require("child_process");
 
 
 // -------------- create Faker Objects --------------
@@ -56,7 +58,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
     store: mongoStore.create({
-        mongoUrl: 'mongodb+srv://carrizoja:Sietepalabras155@codercluster18335.gtx5o.mongodb.net/mySessionsDatabase?retryWrites=true&w=majority',
+        mongoUrl: process.env.MONGOSESSIONURL,
         ttl: 30
     }),
     secret: 'mongosecretcoderfeliz2022',
@@ -168,7 +170,7 @@ app.get('/profile', isAuth, (req, res) => {
 
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(publicPath, '/pages/login.html'))
+    res.sendFile(path.join(publicPath, '/pages/login.html'));
 })
 
 app.get('/unauthorized', (req, res) => {
@@ -219,6 +221,40 @@ app.get('/userPassIncorrect', (req, res) => {
 app.get('/userExists', (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/userExists.html'));
 })
+
+// --------------------------------- Process Object -------------------------------------------------
+
+/* A route that shows the information of object process. */
+app.get("/info", (req, res) => {
+    const options = { default: { name: "José", lastName: "Carrizo" } };
+    console.log(parseArgs(process.argv, options));
+    res.send(`<p>Project Path </p>
+              ${process.cwd()}
+             <p>Process ID </p> 
+             ${process.pid}
+             <p>NODE version</p> 
+             ${process.version}
+             <p>OS</p>
+             ${process.platform}
+             <p>RSS Reserved Memory </p> 
+             ${process.memoryUsage().rss}
+             <p> NODE executec path
+             ${process.execPath}
+             <h3> Please, watch console results for more information</h3>`);
+});
+
+/* A route that resolves a random Math operation */
+app.get("/api/randoms", (req, res) => {
+    let numbers = 100000000;
+    let myFnx = fork("./other/index.js");
+    if (req.query.cant) {
+        numbers = Number(req.query.cant);
+    }
+    myFnx.send(numbers);
+    myFnx.on("message", (total) => {
+        res.send(total);
+    });
+});
 
 
 // ----------------------------------End Routes ------------------------------------------------------

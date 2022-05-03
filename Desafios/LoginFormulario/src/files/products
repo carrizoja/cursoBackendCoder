@@ -724,5 +724,41 @@
     "price": "$160",
     "id": 121,
     "thumbnail": "http://placeimg.com/1234/2345/technology?18538"
+  },
+  {
+    "name": "Pequeño Ladrillo Pescado",
+    "price": "$100",
+    "id": 122,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?97659"
+  },
+  {
+    "name": "Guapo Acero Guantes",
+    "price": "$134",
+    "id": 123,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?9303"
+  },
+  {
+    "name": "Sorprendente Ladrillo Raton",
+    "price": "$166",
+    "id": 124,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?63304"
+  },
+  {
+    "name": "Genérico Plástico Patatas fritas",
+    "price": "$187",
+    "id": 125,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?10202"
+  },
+  {
+    "name": "Práctico Granito Pizza",
+    "price": "$167",
+    "id": 126,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?44062"
+  },
+  {
+    "name": "Ergonómico Plástico Camiseta",
+    "price": "$148",
+    "id": 127,
+    "thumbnail": "http://placeimg.com/1234/2345/technology?10124"
   }
 ]
