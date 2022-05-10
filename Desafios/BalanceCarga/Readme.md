@@ -16,11 +16,11 @@
 
 - Cluster Forever
 
-![3er punto](https://i.imgur.com/7vnlp6q)
+![3er punto](https://i.imgur.com/7vnlp6q.png)
 
 - Cluster Pm2
 
-![3er punto](https://i.imgur.com/DeY0PXN)
+![3er punto](https://i.imgur.com/DeY0PXN.png)
 
 - Finalizacion de procesos PM2 - Forever
 
