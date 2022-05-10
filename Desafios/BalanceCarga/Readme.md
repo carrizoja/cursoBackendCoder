@@ -24,8 +24,8 @@
 
 - Finalizacion de procesos PM2 - Forever
 
-![4to punto - A](https://i.imgur.com/R8PVOnP)
-![4to punto - B](https://i.imgur.com/78QAgGO)
+![4to punto - A](https://i.imgur.com/R8PVOnP.png)
+![4to punto - B](https://i.imgur.com/78QAgGO.png)
 
 
 - 2da parte, PM2 ( Cluster ) + /api/randoms en puertos 8081/2/3/4
