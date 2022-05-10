@@ -6,17 +6,21 @@
 ![1er punto - B](https://i.imgur.com/C4AZrXp.png)
 
 - Medición de cargas y concurrencias con LoadTest:
-(https://imgur.com/0y6Kjpj)
+
+![1er punto](https://imgur.com/0y6Kjpj)
 
 - Forever y PM2 Fork
 
 ![2do punto](https://i.imgur.com/wMUGaLm.png)
 
 
-- Cluster Forever + PM2
+- Cluster Forever
 
-![3er punto - A](https://imgur.com/7vnlp6q)
-![3er punto - B](https://imgur.com/DeY0PXN)
+![3er punto](https://imgur.com/7vnlp6q)
+
+- Cluster Pm2
+
+![3er punto](https://imgur.com/DeY0PXN)
 
 - Finalizacion de procesos PM2 - Forever
 
