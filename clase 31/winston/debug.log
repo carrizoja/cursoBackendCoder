@@ -1,0 +1,6 @@
+{"level":"info","message":"server started"}
+{"level":"debug","message":"debug message"}
+{"level":"error","message":"error message"}
+{"level":"warn","message":"warning message"}
+{"level":"info","message":"3 + 5 = 8"}
+{"level":"error","message":"user did not send the required parameters"}
