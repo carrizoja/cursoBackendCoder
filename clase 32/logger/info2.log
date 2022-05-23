@@ -1,0 +1,4 @@
+[2022-05-17T11:03:12.977] [INFO] file2 - Logger info
+[2022-05-17T11:03:12.979] [WARN] file2 - Logger warn
+[2022-05-17T11:03:12.979] [ERROR] file2 - Logger error
+[2022-05-17T11:03:12.979] [FATAL] file2 - Logger fatal

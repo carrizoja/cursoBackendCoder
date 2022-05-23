@@ -1,0 +1,43 @@
+{"level":"info","message":"User logged in"}
+{"level":"info","message":"User visited the profile page"}
+{"level":"info","message":"Fetch to obtain user data"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET"}
