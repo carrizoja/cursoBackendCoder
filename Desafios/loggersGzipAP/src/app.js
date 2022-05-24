@@ -21,6 +21,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const app = express();
 const processRouter = require('./routes/processRoutes');
 const forkRouter = require('./routes/forkRoutes');
+const fakerRouter = require('./routes/fakerRoutes');
 
 const { args } = require('./config');
 const cluster = require('cluster');
@@ -28,23 +29,7 @@ const numCPUs = require('os').cpus().length;
 const httpServer = new HttpServer(app);
 const { errorLog: errorLogger, infoLog: infoLogger } = require('./utils/loggers/winston');
 const serverMw = require('./utils/middlewares/ServerMw');
-// -------------- create Faker Objects --------------
 
-async function createObjects() {
-    for (let i = 0; i < 6; i++) {
-        let product = {
-            name: commerce.productName(),
-            price: commerce.price(100, 200, 0, '$'),
-            id: datatype.number(10),
-            thumbnail: image.imageUrl(1234, 2345, 'technology', true)
-        }
-        await productService.add(product);
-    }
-
-}
-createObjects();
-
-// ------------------------- End Faker ------------------------------------------------
 
 // ------------------------- Start Gzip ------------------------------------------------
 
@@ -74,6 +59,7 @@ const publicPath = path.join(__dirname, 'public');
 app.use('/', express.static(publicPath));
 app.use('/fork', forkRouter);
 app.use('/process', processRouter);
+app.use('/faker', fakerRouter);
 
 // ------------------------------------ End Routes -----------------------------------
 

@@ -12,7 +12,7 @@ userData.addEventListener('submit', (evt) => {
 });
 
 fetch('/profNameDisabled').then(res => res.json()).then(data => {
-    let username = data.username
+    username = data.username
     console.log(username);
     const renderizar = () => {
         let html = ""

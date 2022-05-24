@@ -22,7 +22,8 @@
 .productContainer {
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-right: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -40,10 +41,19 @@ body {
 
 #userForm {
     margin: 0 auto;
+    border-radius: 5px;
+    background: linear-gradient(#e66465, #9198e5);
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .btn-primary {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chatStyle {
+    background: linear-gradient(#e66465, #9198e5);
 }
 
 .title {
@@ -84,7 +94,9 @@ body {
 /* Form Logout */
 
 .formLogOutStyle {
-    justify-content: flex-end;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
