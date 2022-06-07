@@ -16,3 +16,4 @@
 {"level":"warn","message":"Ruta inexistente -> ruta: '/faker/api/products-test' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/faker/api/products-test' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/faker/api/products-test' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/favicon.ico' || método: 'GET'"}

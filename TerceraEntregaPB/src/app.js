@@ -1,7 +1,7 @@
 const express = require('express');
-const { Server } = require('socket.io');
 const ProductManager = require('./Managers/ProductManagers.js')
 const ChatManager = require('./Managers/ChatManagers.js')
+const uploader = require('./services/Upload.js');
 const faker = require('faker');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
@@ -9,7 +9,6 @@ const mongoStore = require('connect-mongo');
 const normalizr = require('normalizr');
 faker.locale = "es";
 const productService = new ProductManager();
-const { commerce, image, datatype } = faker;
 const bcrypt = require('bcryptjs');
 const connectWithMongo = require('./config/db');
 const path = require('path');
@@ -27,8 +26,9 @@ const { args } = require('./config');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 const httpServer = new HttpServer(app);
-const { errorLog: errorLogger, infoLog: infoLogger } = require('./utils/loggers/winston');
+const { errorLog: errorLogger, infoLog: infoLogger, warnLog: warnLog } = require('./utils/loggers/winston');
 const serverMw = require('./utils/middlewares/ServerMw');
+const { transporter, mailOptions } = require('./services/Nodemailer');
 
 // ------------------------- Start Gzip ------------------------------------------------
 
@@ -36,7 +36,6 @@ let responseTime = require('response-time');
 app.use(responseTime());
 
 const gzip = require('compression');
-const { info } = require('console');
 app.use(gzip({
     // filter decides if the response should be compressed or not, 
     // based on the `shouldCompress` function above
@@ -103,8 +102,9 @@ const createHash = (password) => {
 passport.use('local-signup', new LocalStrategy({
         passReqToCallback: true
     },
-    (req, username, password, done) => {
+    async(req, username, password, done) => {
         User.findOne({ email: req.body.email }, (err, user) => {
+            if (!req.body.file) return done(null, false, { messages: "Couldn't upload avatar" })
 
             if (err) {
                 return done(err);
@@ -113,16 +113,48 @@ passport.use('local-signup', new LocalStrategy({
             if (user) {
                 return done(null, false, { message: 'User already exists' });
             }
+            let isAdmin = false;
+            if (req.body.checkbox !== 'true') {
+                isAdmin = true;
+            }
             const newUser = {
                 email: req.body.email,
                 username: username,
                 password: createHash(password),
+                name: req.body.name,
+                phone: req.body.phone,
+                address: req.body.address,
+                age: req.body.age,
+                avatar: req.body.file,
+                admin: isAdmin
             }
+
             User.create(newUser, (err, userCreated) => {
                 if (err) return done(err);
                 return done(null, userCreated);
             });
+            //Open session with user found
+            req.session.isAuth = true;
+            req.session.username = username;
+
+
         })
+        try {
+            mailOptions.html = `<h1>New user info</h1>
+            <p>Name: ${req.body.name}</p>
+            <p>Email: ${req.body.email}</p>
+            <p>Phone: ${req.body.phone}</p>
+            <p>Address: ${req.body.address}</p>
+            <p>Age: ${req.body.age}</p>
+            <p>Avatar: ${req.body.file}</p>       
+            `
+            let info = await transporter.sendMail(mailOptions);
+            infoLogger.info(`Email sent: ${info.messageId} || Date: ${new Date()}`);
+            /* res.send('Email sent to' + TEST_EMAIL) */
+        } catch (error) {
+            errorLogger.error(` ${error} || Date: ${new Date()}`);
+
+        }
     }
 ));
 // Local Strategy for login
@@ -179,29 +211,29 @@ app.get('/', (req, res) => {
 app.get('/register', (req, res) => {
     if (req.isAuthenticated()) return res.redirect('/profile');
     res.sendFile(path.join(publicPath, '/pages/register.html'));
-    infoLogger.info(`User visited the register page --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User visited the register page --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.get('/profile', isAuth, (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/profile.html'));
-    infoLogger.info(`User visited the profile page --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User visited the profile page --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 
 app.get('/login', (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/login.html'));
-    infoLogger.info(`User visited the login page --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User visited the login page --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.get('/unauthorized', (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/unauthorized.html'));
-    infoLogger.info(`User went to unauthorized page --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User went to unauthorized page --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.get('/profNameDisabled', (req, res) => {
     console.log(req.user);
     if (req.user) res.send(req.user);
-    infoLogger.info(`Fetch to obtain user data --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`Fetch to obtain user data --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.post('/login', passport.authenticate('login', {
@@ -209,17 +241,18 @@ app.post('/login', passport.authenticate('login', {
 }), (req, res) => {
 
     res.redirect('/profile');
-    infoLogger.info(`User logged in with email: ${req.body.email} --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User logged in with email: ${req.body.email} --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 
 
 })
 
-app.post('/register', passport.authenticate('local-signup', {
+app.post('/register', uploader.single("file"), passport.authenticate('local-signup', {
     failureRedirect: '/userExists',
 
 }), (req, res) => {
-    res.redirect('/login');
-    infoLogger.info(`User registered --> path: ${req.path} || method: ${req.method}`);
+
+    res.redirect('/profile');
+    infoLogger.info(`User registered --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 
 })
 
@@ -229,32 +262,27 @@ app.post('/logout', (req, res) => {
             throw err;
         }
         res.redirect('/logout');
-        infoLogger.info(`User logged out --> path: ${req.path} || method: ${req.method}`);
+        infoLogger.info(`User logged out --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
     });
 })
 
 app.get('/logout', (req, res) => {
     // function to setTimeOut to redirect to home page after 4 seconds  after logout
     res.sendFile(path.join(publicPath, '/pages/logout.html'));
-    infoLogger.info(`User logged out --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User logged out --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 });
 
 app.get('/userPassIncorrect', (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/userPassIncorrect.html'));
-    infoLogger.info(`User entered wrong password --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User entered wrong password --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.get('/userExists', (req, res) => {
     res.sendFile(path.join(publicPath, '/pages/userExists.html'));
-    infoLogger.info(`User already exists --> path: ${req.path} || method: ${req.method}`);
+    infoLogger.info(`User already exists --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
 })
 
 app.use(serverMw.routeNotImplemented);
-
-/* app.all('*', (req, res, next ) => {
-    infoLogger.info(`Petición recibida -> ruta: '${req.path}' || método: '${req.method}'`)
-        next();
-}); */
 
 
 // ----------------------------------End Endpoints ------------------------------------------------------
@@ -354,7 +382,7 @@ if (args.MODE === "CLUSTER" && cluster.isMaster) {
         cluster.fork();
     })
 } else {
-    const server = httpServer.listen(args.PORT, () => {
+    const server = httpServer.listen(process.env.PORT || args.PORT, () => {
         console.log(`Server on http://localhost:${args.PORT} || Worker: ${process.pid} || Date: ${new Date()}`);
     })
 

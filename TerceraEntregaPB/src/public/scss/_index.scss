@@ -1,0 +1,129 @@
+/* variables index */
+
+$fondoBodyIndex: linear-gradient(to left, #333333, rgba(0, 0, 0, 1));
+$roboto: 'Roboto',
+sans-serif;
+
+/*Google Fonts */
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+.carousel-item {
+    height: 30rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* CSS Body Index */
+
+.body-index {
+    background-image: $fondoBodyIndex;
+}
+
+.stickyNav {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+}
+
+
+/* CSS para fotos carousel */
+
+.img-aurora4 {
+    background-image: url(./assets/img/bienvenidos.png);
+}
+
+.img-cloud2 {
+    background-image: url(./assets/img/ai.jpg);
+}
+
+.img-code1 {
+    background-image: url(./assets/img/networking3.jpg);
+}
+
+.img-security1 {
+    background-image: url(./assets/img/cybersecurity.jpg);
+}
+
+.img-programming {
+    background-image: url(./assets/img/code3.jpg);
+}
+
+.img-aurora4 {
+    h3 {
+        font-size: 70px;
+        color: white;
+        text-align: center;
+        padding-top: 4%;
+        font-weight: bold;
+        font-family: $roboto;
+        text-shadow: 2px 2px 4px white;
+    }
+}
+
+
+/* CSS colores borde Gradiante animado */
+
+
+/* variables para borde gradiente animado */
+
+$gradiente:linear-gradient(270deg, #ee7752, #e73c7e, #23a605, #23d5ab);
+$tamanio: 800%;
+$altura: 4px;
+.css-selector-bordeDegradee {
+    background: $gradiente;
+    background-size: $tamanio $tamanio;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+    height: $altura;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

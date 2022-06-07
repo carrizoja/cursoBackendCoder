@@ -1,0 +1,957 @@
+// Profile's CSS
+
+/*Google Fonts */
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+.bodyProfile {
+    background: linear-gradient(to left bottom, #3c034d, rgba(236, 28, 211, 0.883));
+}
+
+
+/* .productcard {
+    width: 270px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 10px 7px 20px #000;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background: linear-gradient(to left bottom, #ddd9d951, rgb(238, 232, 232));
+    margin-right: 8px;
+}
+
+.productcard p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+
+.productcard:hover {
+    box-shadow: 15px 10px 30px #000;
+    transform: scale(1.1);
+}
+
+.productcard>img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+} */
+
+.imageStyle {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.productName {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px white;
+}
+
+.priceValue {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px white;
+}
+
+.productContainer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chatTitleStyle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#chatBox {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.divChatStyle {
+    margin-bottom: 3%;
+}
+
+
+/* Button LogOut */
+
+.buttonLogOutStyle {
+    width: 100px;
+    height: 50px;
+    background-color: #dd3c0b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+// --------------------------- Shopping Cart ----------------------
+// CSS para mi cuenta y carrito
+.navbar-top {
+    /* padding: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    padding-right: 2%;
+    overflow: hidden;
+}
+
+.producstOnCart {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #202020;
+    width: 300px;
+    height: 500px;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    text-align: center;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hide {
+    display: none;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .buyItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.producstOnCart img {
+    width: 90px;
+}
+
+.producstOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.carrito-estiloH3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 25%;
+}
+
+
+/* My account text*/
+
+.account-text {
+    font-size: 0.9rem;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.account-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.account-btn:focus {
+    outline: none;
+}
+
+.navbar-top .shopping-cart {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+.shopping-cart .sum-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    padding-left: 5px;
+}
+
+.sum-prices h6 {
+    font-size: 0.9rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+.checkout {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100px;
+}
+
+
+/*---------------------
+  Featured
+-----------------------*/
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.featured {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.featured__controls {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.featured__controls ul li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1c1c1c;
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.featured__controls ul li.active:after {
+    opacity: 1;
+}
+
+.featured__controls ul li:after {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    /* background: #57B5A9; */
+    content: "";
+    opacity: 0;
+}
+
+.featured__controls ul li:hover {
+    background: #57B5A9;
+    bottom: -2px;
+    height: 2px;
+}
+
+.featured__controls ul li:last-child {
+    margin-right: 0;
+}
+
+.featured__item {
+    margin-bottom: 50px;
+}
+
+.featured__item:hover .featured__item__pic .featured__item__pic__hover {
+    bottom: 20px;
+}
+
+.featured__item__pic {
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+}
+
+.featured__item__pic__hover {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -ms-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.featured__item__pic__hover li:last-child {
+    margin-right: 0;
+}
+
+.featured__item__pic__hover li:hover a {
+    background: #7fad39;
+    border-color: #7fad39;
+}
+
+.featured__item__pic__hover li:hover a i {
+    color: #ffffff;
+    transform: rotate(360deg);
+}
+
+.featured__item__pic__hover li a {
+    font-size: 16px;
+    color: #1c1c1c;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    background: #ffffff;
+    display: block;
+    border-radius: 50%;
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    -ms-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li a i {
+    position: relative;
+    transform: rotate(0);
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.featured__item__text {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.featured__item__text h6 {
+    margin-bottom: 10px;
+}
+
+.featured__item__text h6 a {
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.featured__item__text h5 {
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.pictureBorder {
+    border-radius: 5%;
+}
+
+// Comprar por Carrito CSS (chequear)
+
+/* My account text*/
+
+.account-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.account-btn:focus {
+    outline: none;
+}
+
+.shopping-cart .sum-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    padding-left: 5px;
+}
+
+.sum-prices h6 {
+    font-size: 0.9rem;
+}
+
+.botonCarritoCompras {
+    cursor: pointer;
+}
+
+.botonCarritoCompras:hover,
+.account:hover * {
+    color: #0e5e53;
+}
+
+.producstOnCart {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #202020;
+    width: 300px;
+    height: 500px;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    text-align: center;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hide {
+    display: none;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .comprarItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.producstOnCart img {
+    width: 90px;
+}
+
+.producstOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.top button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #c24c37;
+    cursor: pointer;
+}
+
+.top button:hover {
+    color: #e40505;
+}
+
+.producstOnCart>.checkout {
+    font-size: 0.9rem;
+    margin: 20px auto;
+    border: none;
+    background-color: #297075;
+    padding: 10px 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.overlay {
+    overflow: hidden;
+    display: inline-block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.stopScrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.buyItem h6 {
+    margin-bottom: 10px;
+}
+
+.buyItem button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0 6px;
+    border: none;
+}
+
+.buyItem button:active {
+    color: #96c8cc;
+}
+
+.buyItem>div {
+    padding: 0 20px;
+}
+
+.producstOnCart .empty {
+    justify-self: center;
+    margin: 150px auto;
+}
+
+.precio {
+    color: #dd3333;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.searchbar form {
+    position: absolute;
+    right: 17px;
+    top: 27.5px;
+    transform: translate(0%, -50%);
+    transition: all 1s;
+    width: 40px;
+    height: 40px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid #555;
+    padding: 5px;
+}
+
+.searchbar>form input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 20px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.searchbar form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.searchbar form:hover input {
+    display: block;
+}
+
+.searchbar input::placeholder {
+    color: #242424;
+    font-size: 0.8em;
+}
+
+.searchbar>form:hover #search-icon {
+    background: #07051a;
+    color: white;
+}
+
+#search-icon {
+    box-sizing: border-box;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1rem;
+    transition: all 1s;
+}
+
+#search-icon:active,
+#search-icon:focus {
+    outline: none;
+}
+
+.links {
+    position: relative;
+    display: inline-blo;
+    margin: auto;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#hearderSlide {
+    background-color: #49989e;
+    height: 55vh;
+    position: relative;
+}
+
+#hearderSlide .MS-content {
+    margin: 0 1%;
+    white-space: nowrap;
+    /* required */
+    overflow: hidden;
+    /* required */
+    height: 100%;
+}
+
+#hearderSlide .item {
+    display: inline-block;
+    width: 33.3333%;
+    /* required * Determines number of visible slides */
+    position: relative;
+    /* required */
+    vertical-align: top;
+    /* required */
+    overflow: hidden;
+    /* required */
+    height: 100%;
+    /* recommended */
+    white-space: normal;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+#hearderSlide .MS-controls .MS-left {
+    border: none;
+    left: 10px;
+}
+
+#hearderSlide .MS-controls .MS-right {
+    border: none;
+    right: 10px;
+}
+
+.MS-right:focus,
+.MS-left:focus {
+    outline: none;
+}
+
+.MS-right:active,
+.MS-left:active {
+    color: #fff;
+    background-color: #49989e;
+}
+
+#hearderSlide .MS-right {
+    position: absolute;
+    font-weight: bolder;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hearderSlide .MS-left {
+    font-weight: bolder;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-container {
+    max-width: 1600px;
+    margin: auto;
+    width: 88vw;
+    position: relative;
+}
+
+.producto {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.producto-debajo {
+    width: 100%;
+    height: 100%;
+}
+
+.producto-encima {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: show_top;
+    animation-duration: 1s;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes show_top {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product-imagen:hover .producto-encima {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-imagen {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #eee;
+}
+
+.product-imagen img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border-radius: 5%;
+}
+
+.product-resumen {
+    font-size: 0.9rem;
+    position: relative;
+    padding: 10px 5px;
+    height: 38%;
+}
+
+.product-resumen>.precio {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+
+/* Estilo botón */
+
+.btn {
+    background-color: #96c8cc;
+    padding: 15px 50px 15px 30px;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn>.fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.5s;
+}
+
+.btn:hover .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+}
+
+.btn i {
+    margin: 0 5px;
+}
+
+.btn-small {
+    border: none;
+    font-size: 0.9rem;
+    width: 60%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #49989e;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #49989e;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #57B5A9;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    border-radius: 5%;
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 558px) {}
