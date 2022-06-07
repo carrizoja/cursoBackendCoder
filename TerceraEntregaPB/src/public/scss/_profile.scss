@@ -97,8 +97,9 @@
 /* Button LogOut */
 
 .buttonLogOutStyle {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
+    margin-left: 5%;
     background-color: #dd3c0b;
     color: white;
     padding: 14px 20px;
@@ -403,6 +404,7 @@ button:focus {
 /* My account text*/
 
 .account-btn {
+    color: white;
     background: none;
     border: none;
     font-size: 1.4rem;
@@ -430,11 +432,16 @@ button:focus {
 
 .botonCarritoCompras {
     cursor: pointer;
+    color: #ebebeb;
 }
 
 .botonCarritoCompras:hover,
 .account:hover * {
     color: #0e5e53;
+}
+
+#sum-prices {
+    color: white;
 }
 
 .producstOnCart {

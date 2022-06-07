@@ -8,7 +8,7 @@
                         <ul class="featured__item__pic__hover product-over">
                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                            <li><a href="#/"><i class="fa fa-shopping-cart addToCart" data-product-id=${index} onclick="myFunction()"></i></a></li>
+                            <li><a href="#/"><i class="fa fa-shopping-cart addToCart" data-product-id={{this.id}} onclick="myFunction()"></i></a></li>
                         </ul>
                     </div>
                     <div class="featured__item__text product-summary">
@@ -23,4 +23,7 @@
 {{/each}}
 
 </div>
+
+
+
 
