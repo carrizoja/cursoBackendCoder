@@ -1,3 +1,5 @@
+/* const { post } = require("../routes/processRoutes"); */
+
 const socket = io();
 let username;
 let productosEnCarrito;
@@ -72,8 +74,8 @@ socket.on('productLog', (data) => {
 
             } else {
                 document.querySelector('.checkout').classList.add('hidden');
-                elementoPadre.innerHTML = `<center><h2 class="empty" style="font-family: SUNN-line-regular;
-    src: url('../assets/fonts/menu/SUNN-Line-Regular.woff')"> Tu Carrito está vacío </h2></center>`;
+                elementoPadre.innerHTML = `<center><h2 class="empty" style="font-family: Roboto;
+    "> Your Cart is empty </h2></center>`;
                 sumaPrecioCarrito.innerHTML = '';
             }
         }
@@ -163,36 +165,13 @@ socket.on('productLog', (data) => {
         cerrarCarritoCompras.addEventListener('click', cerrarCarrito);
         overlay.addEventListener('click', cerrarCarrito);
 
-        function confirmarCompra() {
 
 
-            cerrarCarrito();
-            Swal.fire({
-                title: '¿Desea confirmar la compra?',
-                showDenyButton: true,
-                confirmButtonText: 'Confirmar',
-                denyButtonText: `Cancelar`,
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire('¡Comprado!', '', 'success')
-                    productosEnCarrito = [];
-                    actualizarCarritoHTML();
-                } else if (result.isDenied) {
-                    Swal.fire('Compra cancelada', '', 'info')
-                }
-            })
-
-
-
-
-        }
 
 
     })
 
 })
-
-
 
 
 
@@ -244,3 +223,44 @@ socket.on('normalizedData', data => {
     console.log(`Porcentaje de reducción: ${(JSON.stringify(mesagges,null,'\t').length - JSON.stringify(data,null,'\t').length)/JSON.stringify(mesagges,null,'\t').length*100}%`)
 
 })
+
+function confirmPurchase() {
+
+    purchaseDetail = JSON.parse(localStorage.getItem('carritoCompras'));
+    console.log(purchaseDetail);
+    console.log(username);
+    socket.emit('purchase', purchaseDetail);
+    socket.emit('userData', username);
+
+    /* window.location.href = '/purchase'; */
+
+    /* console.log(productosEnCarrito);
+    socket.emit('purchase', productosEnCarrito); */
+    /*   Swal.fire({
+          title: '¿Desea confirmar la compra?',
+          showDenyButton: true,
+          confirmButtonText: 'Confirmar',
+          denyButtonText: `Cancelar`,
+      }).then((result) => {
+          if (result.isConfirmed) {
+              purchaseDetail = JSON.parse(localStorage.getItem('carritoCompras'));
+              console.log(purchaseDetail);
+              socket.emit('purchase', purchaseDetail);
+              post('/purchase', purchaseDetail);
+              productosEnCarrito = [];
+              localStorage.clear();
+              Swal.fire('¡Comprado!', '', 'success')
+
+
+          } else if (result.isDenied) {
+              productosEnCarrito = [];
+              localStorage.clear();
+              Swal.fire('Compra cancelada', '', 'info')
+
+          }
+      }) */
+
+
+
+
+}

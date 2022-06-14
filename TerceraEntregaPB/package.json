@@ -39,6 +39,7 @@
         "passport-local": "^1.0.0",
         "response-time": "^2.3.2",
         "socket.io": "^4.4.1",
+        "store2": "^2.13.2",
         "winston": "^3.7.2",
         "yargs": "^17.4.1"
     }

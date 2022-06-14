@@ -64,13 +64,13 @@
         <div class="contact-image">
             <img src="../assets/img/ijac_logo.png" alt="ijac_logo" />
         </div>
-        <form action="/login" method="post">
+        <form id="loginForm" action="/login" method="post">
             <div class="row formStyle">
                 <div class="col-md-6">
-                    <div class="form-group">
+                    <div id="usernameLoginDiv" class="form-group">
                         <input class="textBoxStyle" type="text" name="username" id="email" placeholder="Email *" value="">
                     </div>
-                    <div class="form-group">
+                    <div id="passwordLoginDiv" class="form-group">
                         <input class="textBoxStyle" type="password" name="password" id="password" placeholder="Password *" value="">
                     </div>
                     <div class="form-group btnContacStyle">
@@ -83,15 +83,6 @@
     </div>
     <!-- End Form Register -->
     <!-- End Title Sign Up -->
-    <!--  <h1 class="titleHome">Login</h1>
-    <form class="formStyle" action="/login" method="post">
-        <br> Email:
-        <input class="textBoxStyle" type="text" name="username" id="email">
-        <br> Password:
-        <input class="textBoxStyle" type="password" name="password" id="password">
-        <br>
-        <input class="buttonStyle" type="submit" value="Log In">
-    </form> -->
     <!-- Inicio borde inferior gradiente  -->
     <div class="container-fluid">
         <div class="row no-gutters">
@@ -158,6 +149,7 @@
         </div>
     </footer>
     <!-- Fin Footer 2 -->
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

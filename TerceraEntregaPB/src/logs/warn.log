@@ -56,3 +56,11 @@
 {"level":"warn","message":"Ruta inexistente -> ruta: '/favicon.ico' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/favicon.ico' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/assets/img/torta_arcoIris.png' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'POST'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/purchase' || método: 'GET'"}

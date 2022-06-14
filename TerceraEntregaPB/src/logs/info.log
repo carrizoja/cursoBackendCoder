@@ -1033,3 +1033,381 @@
 {"level":"info","message":"User logged out --> path: /logout || method: POST || Date: Tue Jun 07 2022 17:23:45 GMT-0300 (hora estándar de Argentina)"}
 {"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Tue Jun 07 2022 17:23:45 GMT-0300 (hora estándar de Argentina)"}
 {"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Tue Jun 07 2022 17:23:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Tue Jun 07 2022 17:24:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Tue Jun 07 2022 17:24:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Tue Jun 07 2022 17:24:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Tue Jun 07 2022 17:24:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST || Date: Tue Jun 07 2022 17:25:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Tue Jun 07 2022 17:25:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Tue Jun 07 2022 17:25:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 16:33:02 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 16:33:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:45:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 17:45:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:48:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 17:48:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:48:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 17:51:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:51:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:54:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:55:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 17:55:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 17:55:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:00:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:00:57 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:02 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:08 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:15 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:55 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:01:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:01:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:02:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User already exists --> path: /userExists || method: GET || Date: Sun Jun 12 2022 18:02:02 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:06:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:07:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:10:01 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:12:29 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:17:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:19:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:20:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:24:42 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:25:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:26:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:27:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:28:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:28:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:55:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:56:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User registered --> path: /register || method: POST || Date: Sun Jun 12 2022 18:57:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 18:57:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 18:57:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <b449f5e7-cda2-3500-d503-08ac7c1a6757@KOCHE-PC> || Date: Sun Jun 12 2022 18:57:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 18:58:57 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 18:59:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User registered --> path: /register || method: POST || Date: Sun Jun 12 2022 18:59:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 18:59:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 18:59:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <93005f4b-c0ae-3d56-6b56-8de13fb58536@KOCHE-PC> || Date: Sun Jun 12 2022 18:59:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:00:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:00:15 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 19:01:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:01:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:02:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:02:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:02:01 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the register page --> path: /register || method: GET || Date: Sun Jun 12 2022 19:03:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:03:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:03:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:03:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:03:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:03:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:03:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 19:05:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:05:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:05:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:05:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:05:15 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:06:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:06:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:06:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:06:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:06:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:06:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:08:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:08:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:08:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:08:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:08:58 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:09:01 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:09:02 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:17:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:17:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:18:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:19:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:19:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:19:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:19:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:19:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:19:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:19:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:20:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:20:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:20:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:20:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 19:24:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:24:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:29:29 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:30:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User entered wrong password --> path: /userPassIncorrect || method: GET || Date: Sun Jun 12 2022 19:31:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:31:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:32:29 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:33:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:33:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:34:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:34:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:34:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 19:39:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:39:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:40:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:40:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:40:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:40:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:40:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:40:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:40:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 19:44:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:44:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:44:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:44:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:44:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:45:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:45:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:45:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:45:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 19:59:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 19:59:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 19:59:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 19:59:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 20:02:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 20:02:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 20:02:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 20:02:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 20:02:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 20:14:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 20:14:41 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 20:14:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 20:14:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 20:14:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 20:43:55 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 20:43:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 20:43:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 20:44:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 20:52:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 20:52:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 20:52:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 20:52:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:03:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:03:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:03:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:03:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:05:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:05:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:05:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:05:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:05:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:09:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:09:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:09:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:09:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:13:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:13:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:13:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:13:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:15:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:15:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:15:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:15:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:15:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:18:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:18:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:18:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:18:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:18:38 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:19:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:19:01 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:19:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:19:38 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:21:36 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:21:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:21:41 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:21:41 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:22:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:22:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST || Date: Sun Jun 12 2022 21:22:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Sun Jun 12 2022 21:22:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:22:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:23:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:23:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:23:01 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:23:15 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:23:15 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:24:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:24:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:24:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:24:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:26:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:26:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:26:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:26:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:27:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:27:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:27:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:27:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:27:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:31:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:31:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:31:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:38:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:38:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:38:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:38:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:39:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:39:27 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:39:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:39:33 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:39:33 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:40:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:40:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:40:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:40:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:42:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:44:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:44:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:44:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:44:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:47:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:56:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:56:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:56:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:56:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:56:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 21:58:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 21:58:26 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 21:58:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 21:58:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 21:58:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 23:24:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 23:24:26 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:24:26 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:24:26 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 23:25:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 23:25:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:25:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:25:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 23:26:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 23:26:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 23:26:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:26:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:26:53 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:27:02 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:27:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:27:21 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:27:22 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 23:33:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 23:33:33 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 23:33:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:33:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:33:38 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:33:58 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:33:58 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:34:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:34:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:34:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:34:29 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:34:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:34:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:35:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:35:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:35:33 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:35:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:35:47 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:35:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 23:36:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sun Jun 12 2022 23:36:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Sun Jun 12 2022 23:36:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:36:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:36:54 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sun Jun 12 2022 23:37:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sun Jun 12 2022 23:37:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Sun Jun 12 2022 23:39:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:29:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:30:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:30:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:30:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:30:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:30:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:33:27 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:34:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:34:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:34:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:34:14 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:34:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:34:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:37:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:37:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:37:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:37:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:37:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:37:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:37:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:37:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:37:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:39:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:39:37 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:39:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:39:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:39:45 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:40:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:40:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:42:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:42:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:42:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:42:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:42:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:42:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:42:26 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:46:19 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:46:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:46:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:46:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:46:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:46:35 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:46:36 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:55:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:55:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:55:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:55:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:55:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:55:55 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:55:55 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 15:57:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 15:57:36 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 15:57:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:57:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:57:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:57:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:57:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 15:58:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 15:58:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 16:01:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 16:01:13 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 16:01:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:01:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:01:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:01:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:01:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:01:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:01:59 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User went to unauthorized page --> path: /unauthorized || method: GET || Date: Mon Jun 13 2022 16:06:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 16:06:18 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 16:06:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:06:23 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:06:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:06:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:06:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST || Date: Mon Jun 13 2022 16:06:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Mon Jun 13 2022 16:06:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Mon Jun 13 2022 16:06:36 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with email: undefined --> path: /login || method: POST || Date: Mon Jun 13 2022 16:06:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:06:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:06:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Mon Jun 13 2022 16:06:56 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Mon Jun 13 2022 16:06:56 GMT-0300 (hora estándar de Argentina)"}

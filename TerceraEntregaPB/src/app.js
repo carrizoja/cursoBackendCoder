@@ -29,6 +29,7 @@ const httpServer = new HttpServer(app);
 const { errorLog: errorLogger, infoLog: infoLogger, warnLog: warnLog } = require('./utils/loggers/winston');
 const serverMw = require('./utils/middlewares/ServerMw');
 const { transporter, mailOptions } = require('./services/Nodemailer');
+const store = require('store2');
 
 // ------------------------- Start Gzip ------------------------------------------------
 
@@ -264,6 +265,24 @@ app.post('/logout', (req, res) => {
         res.redirect('/logout');
         infoLogger.info(`User logged out --> path: ${req.path} || method: ${req.method} || Date: ${new Date()}`);
     });
+})
+
+app.post('/purchase', async(req, res) => {
+    let purchase;
+    let userData;
+    io.on('connection', (socket) => {
+        socket.on('purchase', (data) => {
+            console.log(data);
+            purchase = data;
+        })
+        socket.on('userData', (data) => {
+            console.log(data);
+            userData = data;
+        })
+    })
+
+    res.sendFile(path.join(publicPath, '/pages/purchase.html'));
+
 })
 
 app.get('/logout', (req, res) => {

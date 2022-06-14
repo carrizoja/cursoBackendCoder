@@ -65,31 +65,31 @@
         <div class="contact-image">
             <img src="../assets/img/ijac_logo.png" alt="ijac_logo" />
         </div>
-        <form action="/register" method="post">
+        <form id="registerForm" action="/register" method="post">
             <div class="row formStyle">
                 <div class="col-md-6">
-                    <div class="form-group">
+                    <div id="divFieldName" class="form-group ">
                         <input type="text" name="name" id="name" class="textBoxStyle" placeholder="Name *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldUsername" class="form-group">
                         <input type="text" name="username" id="username" class="textBoxStyle" placeholder="Username *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldEmail" class="form-group ">
                         <input type="text" name="email" id="email" class="textBoxStyle" placeholder="Email *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldPassword" class="form-group ">
                         <input type="password" name="password" id="password" class="textBoxStyle" placeholder="Password *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldConfirmPassword" class="form-group ">
                         <input type="password" name="repassword" id="repassword" class="textBoxStyle" placeholder="Repeat Password *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldPhone" class="form-group ">
                         <input type="text" name="phone" id="phone" class="textBoxStyle" placeholder="Phone number *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldAddress" class="form-group">
                         <input type="text" name="address" id="address" class="textBoxStyle" placeholder="Address *" value="" />
                     </div>
-                    <div class="form-group">
+                    <div id="divFieldAge" class="form-group">
                         <input type="text" name="age" id="age" class="textBoxStyle" placeholder="Age *" value="" />
                     </div>
                     <div class="form-group">
@@ -181,6 +181,7 @@
         </div>
     </footer>
     <!-- Fin Footer 2 -->
+    <script src="../js/register.js"></script>
 </body>
 
 </html>
