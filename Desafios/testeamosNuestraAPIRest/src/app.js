@@ -21,6 +21,7 @@ const app = express();
 const processRouter = require('./routes/processRoutes');
 const forkRouter = require('./routes/forkRoutes');
 const fakerRouter = require('./routes/fakerRoutes');
+const productRouter = require('./routes/productRoutes');
 
 const { args } = require('./config');
 const cluster = require('cluster');
@@ -59,6 +60,7 @@ app.use('/', express.static(publicPath));
 app.use('/fork', forkRouter);
 app.use('/process', processRouter);
 app.use('/faker', fakerRouter);
+app.use('/api/products', productRouter);
 
 // ------------------------------------ End Routes -----------------------------------
 
@@ -280,11 +282,6 @@ app.post('/purchase', async(req, res) => {
             userData = data;
         })
     })
-    try {
-
-    } catch {
-
-    }
 
     res.sendFile(path.join(publicPath, '/pages/purchase.html'));
 

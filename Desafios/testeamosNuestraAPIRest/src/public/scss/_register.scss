@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&family=Urbanist:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+.bodyRegister {
+    background: linear-gradient(to left bottom, #3c034d, rgba(236, 28, 211, 0.883));
+}
+
+.form-control {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+#userForm {
+    margin: 0 auto;
+    border-radius: 5px;
+    background: linear-gradient(#e66465, #9198e5);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.form-title {
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+/* Form Styles */
+
+
+/* Button Style */
+
+.contact-form .buttonStyle {
+    width: 100%;
+    background: linear-gradient(to left, rgb(69, 223, 69), rgb(2, 73, 2));
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Extend for Clean Button */
+
+.contact-form .buttonCleanStyle {
+    @extend .buttonStyle;
+    background: linear-gradient(to left, rgb(17, 13, 207), rgb(107, 105, 219));
+}
+
+
+/* Form Logout */
+
+.formLogOutStyle {
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* Textbox Styles */
+
+.textBoxStyle {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* CSS para Contactos */
+
+
+/* variables locales */
+
+$fondo: linear-gradient(to bottom,
+#5a5858,
+#cfc6c6);
+.bodyContacto {
+    background: linear-gradient(to left bottom, #ddd9d9, rgba(238, 232, 232, 0.883));
+}
+
+.contact-form {
+    background: $fondo;
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 5%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.btnContactStyle {
+    justify-content: center;
+}
+
+.formStyle {
+    justify-content: center;
+}
+
+.contact-form .buttonStyle:hover {
+    background: linear-gradient(to left bottom, #3c034d, rgba(236, 28, 211, 0.883));
+}
+
+.haveAnAccountStyle {
+    justify-content: end !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2e61ed;
+    margin-left: 10%;
+}
+
+.btnContactSend {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+// checkbox style
+.checkboxStyle {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+// Admid title style
+.adminTitleStyle {
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    color: #02091a;
+    margin-left: 10%;
+}

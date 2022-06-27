@@ -1,0 +1,1 @@
+// MySql methods for products container using a Class

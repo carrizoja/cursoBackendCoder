@@ -1,0 +1,53 @@
+{
+    "name": "balancecarga",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon src/app.js",
+        "autocannon": "autocannon -c 100 -d 20 http://localhost:8000/process/api/info",
+        "artillery": "artillery quick --count 20 -n 50 http://localhost:8000/process/api/info",
+        "loadtest": "loadtest -n 1000 -c 100 http://localhost:8000/process/api/info",
+        "dev": "nodemon src/app.js -p 8080",
+        "test": "mocha test/apiresful.test.js",
+        "build-css": "node-sass --include-path scss src/public/scss/styles.scss src/public/styles.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "autocannon": "^7.9.0",
+        "axios": "^0.27.2",
+        "bcrypt": "^5.0.1",
+        "bcryptjs": "^2.4.3",
+        "compression": "^1.7.4",
+        "connect-mongo": "^4.6.0",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.3",
+        "express-session": "^1.17.2",
+        "faker": "^5.5.3",
+        "minimist": "^1.2.6",
+        "moment": "^2.29.3",
+        "mongoose": "^6.3.0",
+        "multer": "^1.4.5-lts.1",
+        "node-sass": "^7.0.1",
+        "nodemailer": "^6.7.5",
+        "nodemon": "^2.0.16",
+        "normalizr": "^3.6.2",
+        "passport": "^0.5.2",
+        "passport-local": "^1.0.0",
+        "response-time": "^2.3.2",
+        "socket.io": "^4.4.1",
+        "store2": "^2.13.2",
+        "winston": "^3.7.2",
+        "yargs": "^17.4.1"
+    },
+    "devDependencies": {
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "supertest": "^6.2.3"
+    }
+}
