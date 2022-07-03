@@ -14,6 +14,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const swaggerIU = require("swagger-ui-express")
+const swaggerJsDoc = require("swagger-jsdoc")
+
+const options = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: "Products API",
+            version: "1.0.0",
+            description: "App CODER-BackEnd"
+        },
+        servers: [{ url: "http://localhost:8080" }],
+    },
+    apis: ["./router/*.js"]
+};
+
+const specs = swaggerJsDoc(options)
+app.use('/api-docs', swaggerIU.servers, swaggerIU.setup { specs })
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
