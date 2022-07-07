@@ -1,0 +1,24 @@
+{
+    "name": "koa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --inspect ./src/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.19.0",
+        "eslint-plugin-react": "^7.30.1"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "koa": "^2.13.4",
+        "koa-body": "^5.0.0",
+        "koa-router": "^11.0.1"
+    }
+}

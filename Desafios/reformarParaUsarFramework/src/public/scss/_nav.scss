@@ -1,0 +1,47 @@
+// variables para font
+$roboto: 'Roboto',
+sans-serif;
+$hoverNav: rgb(15, 223, 15);
+
+/* CSS para NAV */
+
+.navbar__logo {
+    width: 80px;
+    padding-left: 30%;
+    height: 60px;
+}
+
+.navbar {
+    background-image: linear-gradient(to left, #333333, rgba(0, 0, 0, 1/* 0.883 */
+    ));
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding-left: 60px !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(15, 223, 15) !important;
+}
+
+.colNavBar {
+    background-image: linear-gradient(to left, #333333, rgba(0, 0, 0, 1));
+}
+
+.navbar li a {
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: $roboto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.navbar a:hover {
+    color: $hoverNav;
+}
