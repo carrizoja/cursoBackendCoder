@@ -24,14 +24,16 @@ app.handle("/", async(req) => {
             body >
             <
             h1 style = {
-                { color: 'blue' } } > Hello Servest with React < /h1> <
+                { color: "blue" } } > Hello Servest with React < /h1> <
             h2 style = {
-                { color: 'brown' } } > Hello Servest with React < /h2> <
+                { color: "brown" } } > Hello Servest with React < /h2> <
             h3 style = {
-                { color: 'purple' } } > FyH: { new Date().toLocaleString() } < /h3> <
+                { color: "purple" } } > { " " }
+            FyH: { new Date().toLocaleString() } <
+            /h3> <
             /body> <
             /html>
-        )
+        ),
     });
 });
 

@@ -21,7 +21,7 @@ const app = express();
 const processRouter = require('./routes/processRoutes');
 const forkRouter = require('./routes/forkRoutes');
 const fakerRouter = require('./routes/fakerRoutes');
-const productRouter = require('./routes/productRoutes');
+const productRouter = require('./routes/productRoutesKOA.js');
 
 const { args } = require('./config');
 const cluster = require('cluster');
