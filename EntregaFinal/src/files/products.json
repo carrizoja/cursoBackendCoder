@@ -1,0 +1,17 @@
+{
+  "elements": [
+    {
+      "id": 1,
+      "price": 100,
+      "timestamp": "28-06-2022 11:57:40",
+      "thumbnail": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Test Product 2",
+      "price": 200,
+      "thumbnail": "https://via.placeholder.com/150",
+      "id": 2,
+      "timestamp": "28-06-2022 11:57:55"
+    }
+  ]
+}
