@@ -1,5 +1,4 @@
 const FSContainer = require('../../containers/FSContainer');
-
 const ChatDto = require('../../dtos/ChatDto');
 const path = require('path')
 const chatsPath = path.join('files', 'chats.json')
@@ -13,7 +12,6 @@ class ChatDaoFS extends FSContainer {
     async getByID(id) {
         try {
             const result = await super.getByID(id);
-
             return new ChatDto(result);
         } catch (error) {
             console.log("Error getById() on CartsDaoFS", error);
@@ -34,9 +32,12 @@ class ChatDaoFS extends FSContainer {
         }
     }
 
-    async desconectar() {
+    async disconnect() {
 
     }
+
+
+
 }
 
 module.exports = ChatDaoFS;

@@ -1,5 +1,15 @@
 const express = require('express');
 const path = require('path');
+const controller = require('../controllers/faker.controller');
+
+const fakerRouter = express.Router();
+
+fakerRouter.get('/api/products-test', controller.getProducts_test);
+
+module.exports = fakerRouter;
+
+
+/* 
 let faker = require('faker');
 const { errorLog: loggerWinston } = require("../utils/loggers/winston");
 const ProductManager = require('../Managers/ProductManagers.js');
@@ -27,4 +37,4 @@ router.get('/api/products-test', (req, res) => {
     }
 })
 
-module.exports = router;
+module.exports = fakerRouter; */

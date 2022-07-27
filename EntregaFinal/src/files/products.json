@@ -1,17 +1,93 @@
 {
   "elements": [
     {
+      "name": "prueba 3",
       "id": 1,
-      "price": 100,
-      "timestamp": "28-06-2022 11:57:40",
-      "thumbnail": "https://via.placeholder.com/150"
+      "timestamp": "23-07-2022 14:44:56"
     },
     {
-      "name": "Test Product 2",
-      "price": 200,
-      "thumbnail": "https://via.placeholder.com/150",
-      "id": 2,
-      "timestamp": "28-06-2022 11:57:55"
+      "name": "Ergonomic Plastic Car",
+      "id": 4,
+      "price": "$161",
+      "timestamp": "23-07-2022 14:00:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?91295"
+    },
+    {
+      "name": "Unbranded Concrete Pizza",
+      "id": 5,
+      "price": "$148",
+      "timestamp": "23-07-2022 14:00:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?52979"
+    },
+    {
+      "name": "Gorgeous Wooden Soap",
+      "id": 6,
+      "price": "$162",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?42497"
+    },
+    {
+      "name": "Gorgeous Fresh Cheese",
+      "id": 7,
+      "price": "$170",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?73717"
+    },
+    {
+      "name": "Rustic Soft Table",
+      "id": 8,
+      "price": "$101",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?64109"
+    },
+    {
+      "name": "Licensed Fresh Chair",
+      "id": 9,
+      "price": "$146",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?74772"
+    },
+    {
+      "name": "Small Rubber Keyboard",
+      "id": 10,
+      "price": "$164",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?22757"
+    },
+    {
+      "name": "Rustic Concrete Gloves",
+      "id": 11,
+      "price": "$153",
+      "timestamp": "23-07-2022 14:48:12",
+      "thumbnail": "http://placeimg.com/1234/2345/technology?79643"
+    },
+    {
+      "name": "micro intel i3",
+      "id": 12,
+      "price": 17500,
+      "timestamp": "23-07-2022 15:01:09",
+      "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639591756/img/crucial_vegeance_iywazh.jpg"
+    },
+    {
+      "name": "micro intel i3",
+      "id": 13,
+      "price": 17500,
+      "timestamp": "23-07-2022 15:02:35",
+      "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639591756/img/crucial_vegeance_iywazh.jpg"
+    },
+    {
+      "name": "Micro intel i5 4.8Ghz 11th",
+      "id": 14,
+      "price": "12432",
+      "timestamp": "23-07-2022 20:59:19",
+      "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1639591756/img/crucial_vegeance_iywazh.jpg"
+    },
+    {
+      "name": "memoria crucial 32GB",
+      "price": "40000",
+      "thumbnail": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1641178901/img/intel_i5_10ma_imiwyn.jpg",
+      "id": 15,
+      "timestamp": "23-07-2022 21:14:41"
     }
   ]
 }

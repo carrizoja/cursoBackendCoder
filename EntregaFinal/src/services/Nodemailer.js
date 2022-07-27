@@ -3,7 +3,7 @@ const app = express();
 const nodemailer = require('nodemailer');
 
 const TEST_EMAIL = 'carrizoja@gmail.com';
-const TEST_PASSWORD = 'pzlxbxdwynyqkfiw';
+const TEST_PASSWORD = 'jqqlgqfufvetnpuc';
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',

@@ -364,6 +364,7 @@ io.on('connection', (socket) => {
         // para emitir un evento a todos menos al mío. Por cada Emit va un ON del otro lado (front)
     socket.on('message', async data => {
         log.push(data);
+        console.log(log);
         await chatService.add(data);
         // Normalization process
         let chats = await chatService.get();

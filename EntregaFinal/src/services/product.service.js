@@ -15,6 +15,7 @@ class Product {
 
     async save(data) {
         try {
+            delete data.btnSubmit;
             return await this.storage.save(data);
         } catch (error) {
             console.log(error);
@@ -36,6 +37,15 @@ class Product {
             console.log(error);
         }
     }
+
+    async getById(id) {
+        try {
+            return await this.storage.getById(id);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 }
 
 module.exports = new Product();

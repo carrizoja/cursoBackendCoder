@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon src/app.js",
+        "start": "node src/app.js",
         "autocannon": "autocannon -c 100 -d 20 http://localhost:8000/process/api/info",
         "artillery": "artillery quick --count 20 -n 50 http://localhost:8000/process/api/info",
         "loadtest": "loadtest -n 1000 -c 100 http://localhost:8000/process/api/info",
@@ -29,6 +29,8 @@
         "express": "^4.17.3",
         "express-session": "^1.17.2",
         "faker": "^5.5.3",
+        "firebase-admin": "^11.0.0",
+        "firestore": "^1.1.6",
         "minimist": "^1.2.6",
         "moment": "^2.29.3",
         "mongoose": "^6.3.0",

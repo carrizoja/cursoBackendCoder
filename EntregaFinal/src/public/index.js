@@ -7,19 +7,25 @@ let productosEnCarrito;
 
 fetch('/profNameDisabled').then(res => res.json()).then(data => {
     username = data.username
+    dataUserFetch = data;
+
     const renderize = () => {
         let html = ""
         html += ` 
-        <input class="buttonLogOutStyle" type="submit" value="Logout ${username} " id="logOutButton">
+        <input class="buttonLogOutStyle" type="submit" value="Logout ${dataUserFetch.username} " id="logOutButton">
         `
         document.getElementById("logOutForm").innerHTML = html
+        if (dataUserFetch.admin == true) {
+            const productForm = document.getElementById('productFormContainer');
+            productForm.style.display = 'block';
+        }
     }
     renderize();
 
 })
 
 socket.on('productLog', (data) => {
-    let products = data.payload;
+    let products = data;
     let productsTemplate = document.getElementById("productsTemplate");
     fetch('templates/newestProducts.handlebars').then(response => {
         return response.text();
@@ -183,7 +189,7 @@ socket.on('newUser', (data) => {
         icon: "success",
         text: "Usuario nuevo conectado",
         toast: true,
-        position: "top-right"
+        position: "bottom-right"
     });
 })
 
@@ -195,14 +201,13 @@ socket.on('userLog', (data) => {
 chatBox.addEventListener('keyup', (evt) => {
     if (evt.key === "Enter") {
         if (chatBox.value.trim().length > 0) { // Trim saca espacios
-            socket.emit('message', { nickname: nickname, message: chatBox.value.trim() })
+            socket.emit('message', { username: username, message: chatBox.value.trim() })
             chatBox.value = "";
         }
     }
 })
 
 socket.on('log', data => {
-
     let log = document.getElementById('log');
     let messages = "";
     data.forEach(message => {
@@ -215,12 +220,12 @@ socket.on('normalizedData', data => {
     let log = document.getElementById('log');
     // denormalization process with normalizr
     const author = new normalizr.schema.Entity('author');
-    const mesagges = new normalizr.schema.Entity('mesagges', {
+    const messages = new normalizr.schema.Entity('messages', {
         author: author,
     });
-    let denormalizedData = new normalizr.denormalize(data.result, [mesagges], data.entities);
+    let denormalizedData = new normalizr.denormalize(data.result, [messages], data.entities);
     console.log(`Longitud total de la data normalizada: ${JSON.stringify(data,null,'\t').length}`);
-    console.log(`Porcentaje de reducción: ${(JSON.stringify(mesagges,null,'\t').length - JSON.stringify(data,null,'\t').length)/JSON.stringify(mesagges,null,'\t').length*100}%`)
+    console.log(`Porcentaje de reducción: ${(JSON.stringify(messages,null,'\t').length - JSON.stringify(data,null,'\t').length)/JSON.stringify(messages,null,'\t').length*100}%`)
 
 })
 

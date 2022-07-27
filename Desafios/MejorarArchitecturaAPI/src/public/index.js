@@ -202,7 +202,7 @@ chatBox.addEventListener('keyup', (evt) => {
 })
 
 socket.on('log', data => {
-
+    console.log(data);
     let log = document.getElementById('log');
     let messages = "";
     data.forEach(message => {

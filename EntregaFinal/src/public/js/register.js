@@ -150,9 +150,12 @@ function validateForm(ev) {
                 ev.preventDefault();
                 return false;
             }
-            if (Nan(fieldPassword.value)) {
+            // set regex for only numbers
+            let regexNumbers = /^[0-9]+$/;
+            // check field password for numbers
+            if (fieldPassword.value.match(regexNumbers)) {
                 divPassword.innerHTML = `<h2 style="text-align: center;font-family: Roboto;color: white;font-size:15px;text-shadow:2px 2px 4px black;
-                ">* Password can't have only numbers </h2>`;
+                ">* Password can't be only numbers </h2>`;
                 divFieldPassword.appendChild(divPassword);
                 ev.preventDefault();
                 return false;

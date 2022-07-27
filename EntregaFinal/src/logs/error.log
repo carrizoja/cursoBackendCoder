@@ -1,2 +1,39 @@
 {"level":"error","message":" ReferenceError: res is not defined || Date: Sun Jun 05 2022 21:14:40 GMT-0300 (hora estándar de Argentina)"}
 {"level":"error","message":" ReferenceError: res is not defined || Date: Sun Jun 05 2022 21:22:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"error","message":" Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials r6-20020a9d5cc6000000b0061c3246bd42sm6819985oti.44 - gsmtp || Date: Tue Jul 19 2022 18:45:30 GMT-0300 (hora estándar de Argentina)"}
+{"level":"error","message":" Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 104-20020a9d0871000000b00618fa37308csm6687370oty.35 - gsmtp || Date: Tue Jul 19 2022 18:46:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"error","message":" Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials d7-20020a9d5e07000000b0061c862ac067sm5065575oti.62 - gsmtp || Date: Tue Jul 19 2022 18:47:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"error","message":" Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials q204-20020aca43d5000000b003351fa55a58sm5830723oia.16 - gsmtp || Date: Tue Jul 19 2022 18:55:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"error","message":"API Products --> error: productDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: Cannot read properties of undefined (reading 'getAll')"}
+{"level":"error","message":"API Products --> error: productDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: ProductsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: ProductsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: ProductsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: productsDao.getAll is not a function"}
+{"level":"error","message":"API Products --> error: products is not defined"}
+{"level":"error","message":"API Products --> error: product.toJSON is not a function"}
+{"level":"error","message":"API Products --> error: this.model.find is not a function"}
+{"level":"error","message":"API Products --> error: this.model.find is not a function"}
+{"level":"error","message":"API Products --> error: this.model.find is not a function"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}
+{"level":"error","message":"API Products --> error: Unexpected token u in JSON at position 0"}

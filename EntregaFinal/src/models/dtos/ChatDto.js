@@ -1,8 +1,8 @@
 class ChatDto {
     constructor(data) {
-        this.autor = data.autor;
+        this.username = data.username;
         this.id = data.id || null;
-        this.msj = data.msj;
+        this.message = data.message;
         this.timestamp = data.timestamp || null;
     }
 }

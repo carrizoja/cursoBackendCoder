@@ -1,6 +1,6 @@
 class ProductDto {
     constructor(data) {
-        this.title = data.title;
+        this.name = data.name;
         this.id = data.id || null;
         this.price = data.price;
         this.timestamp = data.timestamp || null;
