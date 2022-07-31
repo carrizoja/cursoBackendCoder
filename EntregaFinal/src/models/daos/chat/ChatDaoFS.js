@@ -1,4 +1,4 @@
-const FSContainer = require('../../containers/FSContainer');
+const FSContainer = require('../../containers/FSContainer.js');
 const ChatDto = require('../../dtos/ChatDto');
 const path = require('path')
 const chatsPath = path.join('files', 'chats.json')
@@ -24,6 +24,23 @@ class ChatDaoFS extends FSContainer {
 
             const dtos = results.map(result => {
                 return new ChatDto(result);
+            });
+
+            return dtos;
+        } catch (error) {
+            console.log("Error getAll() on CartsDaoFS", error);
+        }
+    }
+
+    async getChatsByUsername(username) {
+        try {
+            // search for all chats with the username
+            const results = await super.getAll();
+            const chats = results.filter(chat => {
+                return chat.username === username;
+            })
+            const dtos = chats.map(chat => {
+                return new ChatDto(chat);
             });
 
             return dtos;

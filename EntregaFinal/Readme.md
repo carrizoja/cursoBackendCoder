@@ -1,40 +1,32 @@
-# Documentacion sobre el desafio Balance de Carga:
+# Documentacion sobre Proyecto Final PB:
 
-- Modo cluster y fork con nodemon: 
+- Rutas: 
 
-![1er punto - A](https://i.imgur.com/DbdhOy2.png)
-![1er punto - B](https://i.imgur.com/C4AZrXp.png)
+- Productos: 
+/api/products
 
-- Medición de cargas y concurrencias con LoadTest:
+Buscar por categoría:
+/api/products/category/:category
 
-![1er punto](https://i.imgur.com/0y6Kjpj.png)
+- Carritos:
+/api/carts
 
-- Forever y PM2 Fork
+Agregar / Borrar producto al carrito:
+/api/carts/:idCart/products/:idProduct
 
-![2do punto](https://i.imgur.com/wMUGaLm.png)
+- Órdenes:
+/api/orders
 
+Buscar órdenes por nombre de usuario:
+/api/orders/:username
 
-- Cluster Forever
+- Chats:
+/api/chats
 
-![3er punto](https://i.imgur.com/7vnlp6q.png)
-
-- Cluster Pm2
-
-![3er punto](https://i.imgur.com/DeY0PXN.png)
-
-- Finalizacion de procesos PM2 - Forever
-
-![4to punto - A](https://i.imgur.com/R8PVOnP.png)
-![4to punto - B](https://i.imgur.com/78QAgGO.png)
+Buscar mensajes por nombre de usuario:
+/api/chats/:username
 
 
-- 2da parte, PM2 ( Cluster ) + /api/randoms en puertos 8081/2/3/4
-
-![5to punto](https://i.imgur.com/31dq2SV.png)
-
-- Archivo con la configuracion de Nginx:
-
-![6to punto](https://i.imgur.com/z3hMDSb.png)
 
 
 

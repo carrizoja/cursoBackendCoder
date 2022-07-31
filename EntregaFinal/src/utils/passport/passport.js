@@ -71,7 +71,7 @@ passport.use('local-signup', new LocalStrategy({
             `
             let info = await transporter.sendMail(mailOptions);
             infoLogger.info(`Email sent: ${info.messageId} || Date: ${new Date()}`);
-            /* res.send('Email sent to' + TEST_EMAIL) */
+
         } catch (error) {
             errorLogger.error(` ${error} || Date: ${new Date()}`);
 

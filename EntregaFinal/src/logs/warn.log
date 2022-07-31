@@ -148,3 +148,4 @@
 {"level":"warn","message":"Ruta inexistente -> ruta: '/api/products/1' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/api/product/1' || método: 'GET'"}
 {"level":"warn","message":"Ruta inexistente -> ruta: '/api/products/1' || método: 'GET'"}
+{"level":"warn","message":"Ruta inexistente -> ruta: '/api/orders/jose' || método: 'POST'"}

@@ -12,6 +12,10 @@ class ChatsDaoMongoDB {
         return await this.chatManager.save(chat);
     }
 
+    async getChatsByUsername(username) {
+        return await this.chatManager.getChatsByUsername(username);
+    }
+
 
 }
 

@@ -8,6 +8,10 @@ class ProductsDaoMongoDB {
         return await this.productManager.getAll();
     }
 
+    async getProductsByCategory(category) {
+        return await this.productManager.getProductsByCategory(category);
+    }
+
     async save(product) {
         return await this.productManager.save(product);
     }

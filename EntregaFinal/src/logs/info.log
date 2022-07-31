@@ -2297,3 +2297,50 @@
 {"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Tue Jul 26 2022 13:15:42 GMT-0300 (hora estándar de Argentina)"}
 {"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Tue Jul 26 2022 13:15:45 GMT-0300 (hora estándar de Argentina)"}
 {"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Tue Jul 26 2022 17:14:46 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:31:03 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Wed Jul 27 2022 10:31:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Wed Jul 27 2022 10:31:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Wed Jul 27 2022 10:31:08 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Wed Jul 27 2022 10:33:07 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:33:10 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:33:11 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Wed Jul 27 2022 10:33:16 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Wed Jul 27 2022 10:33:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Wed Jul 27 2022 10:33:17 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Wed Jul 27 2022 10:47:40 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:47:44 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Wed Jul 27 2022 10:47:48 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Wed Jul 27 2022 10:47:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Wed Jul 27 2022 10:47:50 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Wed Jul 27 2022 10:52:57 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:53:00 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Wed Jul 27 2022 10:53:04 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Wed Jul 27 2022 10:53:04 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Wed Jul 27 2022 10:53:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Wed Jul 27 2022 10:54:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:54:27 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Wed Jul 27 2022 10:57:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Wed Jul 27 2022 10:57:34 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Wed Jul 27 2022 10:57:36 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Wed Jul 27 2022 10:58:20 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Wed Jul 27 2022 10:58:24 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sat Jul 30 2022 21:38:05 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged in with mail: carrizoja@gmail.com --> path: /login || method: POST || Date: Sat Jul 30 2022 21:38:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the profile page --> path: /profile || method: GET || Date: Sat Jul 30 2022 21:38:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Fetch to obtain user data --> path: /profNameDisabled || method: GET || Date: Sat Jul 30 2022 21:38:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: POST || Date: Sat Jul 30 2022 21:38:27 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User logged out --> path: /logout || method: GET || Date: Sat Jul 30 2022 21:38:28 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"User visited the login page --> path: /login || method: GET || Date: Sat Jul 30 2022 21:38:31 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <79465507-2756-9700-fd1a-e718d07cebcd@KOCHE-PC> || Date: Sat Jul 30 2022 22:42:49 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <cd522e72-a7f1-efe0-4479-916d1254444c@KOCHE-PC> || Date: Sat Jul 30 2022 23:32:25 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <2fd8c0e1-4e7a-0657-4c21-cd800d817d55@KOCHE-PC> || Date: Sat Jul 30 2022 23:36:39 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <804af352-4a7f-6bee-e6c9-ecd086522a97@KOCHE-PC> || Date: Sat Jul 30 2022 23:38:33 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <75b80890-42e4-b3a9-326c-d5f30620fd1a@KOCHE-PC> || Date: Sat Jul 30 2022 23:40:06 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <a5ceed14-2196-2912-3682-97a32d5af7bc@KOCHE-PC> || Date: Sat Jul 30 2022 23:41:12 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <c66a14d1-2bce-b232-e3c5-b61b1e9fcc45@KOCHE-PC> || Date: Sat Jul 30 2022 23:42:51 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <de5f5a74-82d1-a0b3-e219-95149d833a54@KOCHE-PC> || Date: Sat Jul 30 2022 23:43:51 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Message sent: SMc9d698ac940a4b2e8fb39f010dafc8f8 || Date: Sat Jul 30 2022 23:43:52 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <eac1aefe-665c-2c84-f2a5-3adad761fabb@KOCHE-PC> || Date: Sat Jul 30 2022 23:48:08 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Message sent: SM17017a17b6b143c48b5a4d844450621a || Date: Sat Jul 30 2022 23:48:09 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Email sent: <906b9ab6-4cca-19b8-52ad-90f513f36df7@KOCHE-PC> || Date: Sat Jul 30 2022 23:49:32 GMT-0300 (hora estándar de Argentina)"}
+{"level":"info","message":"Message sent: SMdaffcf11531d4d3e93e1f4230536ed5e || Date: Sat Jul 30 2022 23:49:33 GMT-0300 (hora estándar de Argentina)"}

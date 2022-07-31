@@ -13,6 +13,14 @@ class Product {
         }
     }
 
+    async getByCategory(category) {
+        try {
+            return await this.storage.getProductsByCategory(category);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     async save(data) {
         try {
             delete data.btnSubmit;

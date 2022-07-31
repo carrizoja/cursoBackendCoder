@@ -4,6 +4,7 @@ const { config } = require('../../config');
 const ChatDao = require(`./chat/ChatDao${config.SELECTED_STORAGE}`);
 const ProductsDao = require(`./products/ProductsDao${config.SELECTED_STORAGE}`);
 const CartDao = require(`./cart/CartDao${config.SELECTED_STORAGE}`);
+const OrderDao = require(`./order/OrderDao${config.SELECTED_STORAGE}`);
 
 // Factory pattern: Create and return a set of Daos 
 // Singleton pattern: Unique instance of the class
@@ -19,6 +20,7 @@ class DAOsFactory {
             chatDao: new ChatDao(),
             productsDao: new ProductsDao(),
             cartDao: new CartDao(),
+            orderDao: new OrderDao()
         };
 
         this.singleton = DAOsFactory.singleton;

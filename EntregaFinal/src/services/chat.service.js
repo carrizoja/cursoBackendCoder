@@ -14,23 +14,15 @@ class Chat {
         }
     }
 
-    /*    async save(data) {
-           try {
 
-               return await this.storage.save(data);
-           } catch (error) {
-               console.log(error);
-           }
-       }
+    async getChatsByUsername(username) {
+        try {
+            return await this.storage.getChatsByUsername(username);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
-
-       async getById(id) {
-           try {
-               return await this.storage.getById(id);
-           } catch (error) {
-               console.log(error);
-           }
-       } */
 
 }
 

@@ -6,7 +6,7 @@ const { Server: IOServer } = require('socket.io');
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const { productsDao, chatDao, cartDao } = require('./models/daos')
+const { productsDao, chatDao } = require('./models/daos')
 const { args } = require('./config');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
@@ -67,6 +67,7 @@ const productRouter = require('./routes/productRoutes');
 const generalRouter = require('./routes/generalRoutes');
 const cartRouter = require('./routes/cartRoutes');
 const chatRouter = require('./routes/chatRoutes');
+const orderRouter = require('./routes/orderRoutes');
 
 app.use('/', generalRouter);
 app.use('/', express.static(publicPath));
@@ -76,6 +77,7 @@ app.use('/faker', fakerRouter);
 app.use('/api/products', productRouter);
 app.use('/api/carts', cartRouter);
 app.use('/api/chats', chatRouter);
+app.use('/api/orders', orderRouter);
 
 
 // ------------------------------------ End Routes -----------------------------------

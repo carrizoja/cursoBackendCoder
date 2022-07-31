@@ -9,6 +9,20 @@ const getProducts = async(req, res) => {
     }
 };
 
+const getProductsByCategory = async(req, res) => {
+    try {
+        const category = req.params.category;
+        await service.getByCategory(category).then(result => {
+            if (result.length == 0) {
+                return res.status(404).send({ error: "Product not found" });
+            }
+            res.json(result);
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 const postProduct = async(req, res) => {
     console.log(req.body);
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) return res.status(400).send({ error: "There isn't any data" });
@@ -94,5 +108,6 @@ module.exports = {
     postProduct,
     putProduct,
     deleteProduct,
-    getProductById
+    getProductById,
+    getProductsByCategory
 };

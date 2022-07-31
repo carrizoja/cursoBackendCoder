@@ -6,7 +6,7 @@ let args = yargs
     .default({
         "MODE": "FORK",
         "PORT": 8080,
-        "STORAGE": "FS",
+        "STORAGE": "MongoDB",
     })
     .alias({
         m: "MODE",

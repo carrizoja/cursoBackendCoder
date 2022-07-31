@@ -44,6 +44,7 @@
         "response-time": "^2.3.2",
         "socket.io": "^4.4.1",
         "store2": "^2.13.2",
+        "twilio": "^3.80.0",
         "winston": "^3.7.2",
         "yargs": "^17.4.1"
     },
