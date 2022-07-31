@@ -1,12 +1,13 @@
 const orderService = require('../services/order.service.js');
 const { transporter, mailOptions } = require('../services/Nodemailer');
+
 const { errorLog: errorLogger, infoLog: infoLogger, warnLog: warnLog } = require('../utils/loggers/winston');
+require('dotenv').config();
 const twilio = require('twilio');
 
 // Credentials twilio
-const accountId = "AC50a0b45fb6d0658494c0fc5e34abc1d3";
-const authToken = "b14d5cedfe04c176a64aff1f40820277";
-const client = new twilio(accountId, authToken);
+
+const client = new twilio(process.env.ACCOUNTIDTWILIO, process.env.AUTHTOKENTWILIO);
 
 const getOrders = async(req, res) => {
     try {
