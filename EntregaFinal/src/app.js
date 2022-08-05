@@ -84,23 +84,7 @@ app.use('/api/orders', orderRouter);
 
 // ----------------------------- Endpoints -------------------------------------------------
 
-app.post('/purchase', async(req, res) => {
-    let purchase;
-    let userData;
-    io.on('connection', (socket) => {
-        socket.on('purchase', (data) => {
-            console.log(data);
-            purchase = data;
-        })
-        socket.on('userData', (data) => {
-            console.log(data);
-            userData = data;
-        })
-    })
 
-    res.sendFile(path.join(publicPath, '/pages/purchase.html'));
-
-})
 
 app.use(serverMw.routeNotImplemented);
 // ----------------------------------End Endpoints ------------------------------------------------------
