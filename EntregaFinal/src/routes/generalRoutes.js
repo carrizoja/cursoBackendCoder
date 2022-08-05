@@ -6,7 +6,7 @@ const controller = require('../controllers/general.controller.js')
 
 const generalRouter = express.Router()
 
-generalRouter.get('/', controller.getHomePage)
+generalRouter.get('/', authMw.isNotAuth, controller.getHomePage)
 generalRouter.get('/register', authMw.isNotAuth, controller.getRegisterPage)
 generalRouter.get('/login', authMw.isNotAuth, controller.getLoginPage)
 generalRouter.get('/profile', authMw.isAuth, controller.getProfilePage)
